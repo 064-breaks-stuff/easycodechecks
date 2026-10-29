@@ -1,22 +1,81 @@
 {
-  "auditReportVersion": 2,
-  "vulnerabilities": {},
-  "metadata": {
-    "vulnerabilities": {
-      "info": 0,
-      "low": 0,
-      "moderate": 0,
-      "high": 0,
-      "critical": 0,
-      "total": 0
+  "generatedAt": "2026-10-29T19:56:04.889Z",
+  "purpose": "Cloudflare Pages static preview preparation only",
+  "deployed": false,
+  "cloudflareRuntimeVerified": false,
+  "outputDirectory": "build/client",
+  "knownRoutes": [
+    {
+      "route": "/",
+      "file": "index.html"
     },
-    "dependencies": {
-      "prod": 30,
-      "dev": 168,
-      "optional": 53,
-      "peer": 2,
-      "peerOptional": 0,
-      "total": 199
+    {
+      "route": "/services",
+      "file": "services/index.html"
+    },
+    {
+      "route": "/services/code-checks",
+      "file": "services/code-checks/index.html"
+    },
+    {
+      "route": "/services/sign-permitting",
+      "file": "services/sign-permitting/index.html"
+    },
+    {
+      "route": "/services/variances-appeals",
+      "file": "services/variances-appeals/index.html"
+    },
+    {
+      "route": "/industries",
+      "file": "industries/index.html"
+    },
+    {
+      "route": "/drive-thru",
+      "file": "drive-thru/index.html"
+    },
+    {
+      "route": "/building-signs",
+      "file": "building-signs/index.html"
+    },
+    {
+      "route": "/banking",
+      "file": "banking/index.html"
+    },
+    {
+      "route": "/subdivision",
+      "file": "subdivision/index.html"
+    },
+    {
+      "route": "/about",
+      "file": "about/index.html"
+    },
+    {
+      "route": "/blog",
+      "file": "blog/index.html"
+    },
+    {
+      "route": "/request-a-quote",
+      "file": "request-a-quote/index.html"
+    },
+    {
+      "route": "/contact",
+      "file": "contact/index.html"
     }
-  }
+  ],
+  "fallback": {
+    "file": "404.html",
+    "source": "__spa-fallback.html",
+    "sha256": "ff9be541d315430423db510e5f4ed5dbceeaaefb1654f43eaf79a7395286f075",
+    "byteIdentical": true
+  },
+  "crawlDirectives": {
+    "headerNoindex": true,
+    "robotsDisallowAll": true
+  },
+  "formScope": "UI-only; no delivery integration",
+  "limitations": [
+    "Local artifact checks are not a Cloudflare deployment test.",
+    "No-index directives are not access control.",
+    "Final assets/content and explicit release approval remain outstanding."
+  ]
 }
