@@ -1,0 +1,93 @@
+{
+  "batch": 4,
+  "baseline_commit": "81b82ee4dcd23129b66dcc6d85231da0ed55b070",
+  "replaces": [
+    "app/components/SiteHeader.jsx",
+    "app/routes/page.jsx"
+  ],
+  "dependency_changes": false,
+  "files": [
+    {
+      "path": "BATCH-4.md",
+      "sha256": "7e40c453926c13151537932d33d9e7f16b7a57b539599210e21bd1eff1e94084",
+      "bytes": 8061
+    },
+    {
+      "path": "app/components/SiteHeader.jsx",
+      "sha256": "3f9397020e55523b1da1633392df575489784bec3ce3f2de041da04f98aca2f0",
+      "bytes": 6742
+    },
+    {
+      "path": "app/components/interior/Breadcrumbs.jsx",
+      "sha256": "2c35c11c6bce590ba06dd770842fdce9390aae5bd17f48e2a36b5f768c3f5e47",
+      "bytes": 800
+    },
+    {
+      "path": "app/components/interior/FAQList.jsx",
+      "sha256": "5a086ca3d71b8e1088cdbad96dbe7df7b36023020c9597b48cc56c2729eb60e9",
+      "bytes": 653
+    },
+    {
+      "path": "app/components/interior/InteriorView.jsx",
+      "sha256": "52406051382939423c459353d8a598bf8d4150f5e7c45c83e7d4b5fc977fc5d8",
+      "bytes": 6848
+    },
+    {
+      "path": "app/components/interior/PageHero.jsx",
+      "sha256": "d0e25523581f977774104beece281db463908dcf7294e540962004e5d13b1de0",
+      "bytes": 1280
+    },
+    {
+      "path": "app/components/interior/RelatedPages.jsx",
+      "sha256": "61db6a67e7f2616786e84dfaa124a88ac36d5787603fb9747a85af67fedf41d7",
+      "bytes": 840
+    },
+    {
+      "path": "app/content/interior.js",
+      "sha256": "974d4092b0ec1ac60685bada4397025b15ea7e6b1c07f904a0e56ace9d1f6e0a",
+      "bytes": 10250
+    },
+    {
+      "path": "app/lib/navigation.js",
+      "sha256": "a213f68b3ab3673be80a4d4d6802d79b7f6448342af467a003d604e405c2cd29",
+      "bytes": 286
+    },
+    {
+      "path": "app/routes/page.jsx",
+      "sha256": "b81889ff0fa08aa876f0ea847d1be049df46c1453c4214e852844a9f13e51c44",
+      "bytes": 1273
+    },
+    {
+      "path": "app/styles/interior.module.css",
+      "sha256": "bddd3c42d948129103ce0912b30caf3a7fb23ef9662f0b7aff8b736912461b6b",
+      "bytes": 9158
+    },
+    {
+      "path": "app/styles/navigation.module.css",
+      "sha256": "add0e5c236493e2d0dcb2bfb457ca257c8780aa9087c7e7490fba42622047e9c",
+      "bytes": 3350
+    },
+    {
+      "path": "scripts/verify-project.mjs",
+      "sha256": "90613759785ee44b8faffff68aaced8762556599fa67a11a49917bf6ef3cfabc",
+      "bytes": 7311
+    },
+    {
+      "path": "tests/interior.test.jsx",
+      "sha256": "b76a09682c8df7c75a3b5d6da6fab0364d09c99330f8b195b3c1c95193a65613",
+      "bytes": 3142
+    }
+  ],
+  "validation": {
+    "baseline_source_review": "full Batch 3 diff plus current header, route module, registry, routing and content utility inspected read-only",
+    "js_mjs_node_syntax": "passed",
+    "navigation_and_quote_logic": "Node assertions passed with representative existing registry fixtures",
+    "relative_import_targets": "resolved against overlay and inspected baseline",
+    "css_module_references": "all delivered references resolve",
+    "css_braces": "balanced",
+    "jsx_parser": "not available in delivery environment; production build must check locally",
+    "full_vitest": "not executed here",
+    "production_build": "not executed here",
+    "browser_webgl": "not executed here"
+  }
+}

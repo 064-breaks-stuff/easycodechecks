@@ -1,0 +1,47 @@
+{
+  "patch": "4.1",
+  "replaces": [
+    "app/routes/not-found.jsx",
+    "scripts/verify-project.mjs"
+  ],
+  "dependency_changes": false,
+  "checks": {
+    "plain_js_mjs_syntax": "passed",
+    "shell_free_mock_cli_execution_with_spaces": "passed (delivery environment, not Windows)",
+    "resolver_assertions": "passed",
+    "zip_integrity": "verified at packaging",
+    "full_local_build": "must rerun locally"
+  },
+  "files": [
+    {
+      "path": "BUILD-FIX-4.1.md",
+      "sha256": "c00a4e6b960647315089eb5fea7686aeba0e5d4936f5e83c6669e6a9a3e6e26d",
+      "bytes": 4057
+    },
+    {
+      "path": "app/routes/not-found.jsx",
+      "sha256": "fa3f17d24eb78f0e3bd806eb2ca891ccd85265ea397594cf93ee481bdbc9e6b3",
+      "bytes": 768
+    },
+    {
+      "path": "scripts/lib/npm-command.mjs",
+      "sha256": "d07ece734bdb96c79ea1c618521adbeb1cbcc658b9d2f377b4281cb73dc808da",
+      "bytes": 1594
+    },
+    {
+      "path": "scripts/verify-project.mjs",
+      "sha256": "c3492122788122f83980f7788b7bfd70ab3bfcb584cd4bf2396a0cb4a9462a09",
+      "bytes": 7423
+    },
+    {
+      "path": "tests/not-found.test.jsx",
+      "sha256": "01c0995e03c16d57512dd306aafea97a26bfee9a935670b012f6f6c6b04e306c",
+      "bytes": 818
+    },
+    {
+      "path": "tests/npm-command.test.js",
+      "sha256": "8c3a4b4b0df08cd8958903c6bc49134739a92b19d02d124f2b002ba82ae2a41c",
+      "bytes": 1025
+    }
+  ]
+}
