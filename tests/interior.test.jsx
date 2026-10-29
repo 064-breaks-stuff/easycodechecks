@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 import { renderToStaticMarkup } from "react-dom/server";
 import { MemoryRouter } from "react-router";
 import InteriorView from "../app/components/interior/InteriorView.jsx";
+import QuotePageView from "../app/components/forms/QuotePageView.jsx";
 import SiteHeader from "../app/components/SiteHeader.jsx";
 import { pages } from "../app/content/pages.js";
 import { getPageByPath, getRelatedPages } from "../app/lib/content.js";
@@ -11,7 +12,10 @@ import { navigationMatches } from "../app/lib/navigation.js";
 import { navigation } from "../app/content/site.js";
 
 function renderPage(page, query = "") {
-  return renderToStaticMarkup(<MemoryRouter initialEntries={[`${page.path}${query}`]}><InteriorView page={page} relatedPages={getRelatedPages(page)} /></MemoryRouter>);
+  const content = page.id === "request-a-quote"
+    ? <QuotePageView page={page} />
+    : <InteriorView page={page} relatedPages={getRelatedPages(page)} />;
+  return renderToStaticMarkup(<MemoryRouter initialEntries={[`${page.path}${query}`]}>{content}</MemoryRouter>);
 }
 
 describe("interior pages", () => {

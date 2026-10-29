@@ -1,41 +1,41 @@
 {
-  "generatedAt": "2026-10-29T18:23:16.688Z",
+  "generatedAt": "2026-10-29T19:02:04.574Z",
   "measurement": "Generated JS/CSS file sizes and Node gzip estimates; not browser timing, Brotli transfer, or first-load totals.",
   "allGeneratedAssets": {
-    "count": 17,
-    "bytes": 1521992,
-    "gzipBytes": 441026
+    "count": 20,
+    "bytes": 1523153,
+    "gzipBytes": 442599
   },
   "referenceLargeChunkBytes": 512000,
   "largeJavaScript": [
     {
-      "file": "assets/HeroCanvas.client-CmAytf8V.js",
+      "file": "assets/HeroCanvas.client-CoocO_eA.js",
       "kind": "javascript",
-      "bytes": 889537,
-      "gzipBytes": 240263
+      "bytes": 889543,
+      "gzipBytes": 240268
     }
   ],
   "assets": [
     {
-      "file": "assets/HeroCanvas.client-CmAytf8V.js",
+      "file": "assets/HeroCanvas.client-CoocO_eA.js",
       "kind": "javascript",
-      "bytes": 889537,
-      "gzipBytes": 240263
+      "bytes": 889543,
+      "gzipBytes": 240268
     },
     {
-      "file": "assets/entry.client-H_uQDK0F.js",
+      "file": "assets/entry.client-D-7Dj1q9.js",
       "kind": "javascript",
       "bytes": 215951,
-      "gzipBytes": 67261
+      "gzipBytes": 67262
     },
     {
-      "file": "assets/page-CcK7Cr8U.js",
+      "file": "assets/quote-BJenoxzo.js",
       "kind": "javascript",
-      "bytes": 159094,
-      "gzipBytes": 50256
+      "bytes": 134295,
+      "gzipBytes": 41990
     },
     {
-      "file": "assets/jsx-runtime-6Ijt1A5w.js",
+      "file": "assets/jsx-runtime-B-IgoNgc.js",
       "kind": "javascript",
       "bytes": 132945,
       "gzipBytes": 44931
@@ -47,10 +47,10 @@
       "gzipBytes": 13602
     },
     {
-      "file": "assets/home-7g91LgO4.js",
+      "file": "assets/home-DcONihi7.js",
       "kind": "javascript",
-      "bytes": 21859,
-      "gzipBytes": 7599
+      "bytes": 21842,
+      "gzipBytes": 7588
     },
     {
       "file": "assets/home-D4jYk6TU.css",
@@ -59,28 +59,52 @@
       "gzipBytes": 3578
     },
     {
-      "file": "assets/page-DAVNqrwG.css",
-      "kind": "css",
-      "bytes": 14640,
-      "gzipBytes": 3159
-    },
-    {
       "file": "assets/root-VD0QBV0w.css",
       "kind": "css",
       "bytes": 13687,
       "gzipBytes": 3566
     },
     {
-      "file": "assets/root-BIiqvjaU.js",
+      "file": "assets/PageHero-fXuDc_9m.js",
       "kind": "javascript",
-      "bytes": 8403,
-      "gzipBytes": 2945
+      "bytes": 11865,
+      "gzipBytes": 4268
     },
     {
-      "file": "assets/manifest-884c11b3.js",
+      "file": "assets/PageHero-iZLhlmub.css",
+      "kind": "css",
+      "bytes": 9195,
+      "gzipBytes": 2149
+    },
+    {
+      "file": "assets/root-CVSCgpeI.js",
       "kind": "javascript",
-      "bytes": 7311,
-      "gzipBytes": 745
+      "bytes": 8403,
+      "gzipBytes": 2944
+    },
+    {
+      "file": "assets/page-Dkbaknjm.js",
+      "kind": "javascript",
+      "bytes": 7847,
+      "gzipBytes": 2626
+    },
+    {
+      "file": "assets/manifest-a07dd114.js",
+      "kind": "javascript",
+      "bytes": 7838,
+      "gzipBytes": 797
+    },
+    {
+      "file": "assets/page-route-bGXa-fa0.js",
+      "kind": "javascript",
+      "bytes": 5896,
+      "gzipBytes": 2547
+    },
+    {
+      "file": "assets/quote-8OYU5H30.css",
+      "kind": "css",
+      "bytes": 5446,
+      "gzipBytes": 1519
     },
     {
       "file": "assets/index-Bb8JjhAW.js",
@@ -95,28 +119,22 @@
       "gzipBytes": 490
     },
     {
-      "file": "assets/not-found-dsYh5cMR.js",
+      "file": "assets/not-found-a1nrKoSK.js",
       "kind": "javascript",
       "bytes": 717,
-      "gzipBytes": 426
+      "gzipBytes": 422
     },
     {
-      "file": "assets/home-DK3lv90M.js",
+      "file": "assets/home-BnF8YDhR.js",
       "kind": "javascript",
-      "bytes": 203,
-      "gzipBytes": 167
+      "bytes": 209,
+      "gzipBytes": 169
     },
     {
-      "file": "assets/Container-DhwBxYVh.js",
+      "file": "assets/Container-ikckZ4OW.js",
       "kind": "javascript",
       "bytes": 186,
-      "gzipBytes": 168
-    },
-    {
-      "file": "assets/page-wOQ7CWlX.js",
-      "kind": "javascript",
-      "bytes": 171,
-      "gzipBytes": 152
+      "gzipBytes": 165
     }
   ]
 }

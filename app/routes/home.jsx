@@ -10,7 +10,7 @@ import FinalCTA from "../sections/home/FinalCTA.jsx";
 import useHomeMotion from "../hooks/useHomeMotion.js";
 import styles from "../styles/home.module.css";
 
-export { loader, meta } from "./page.jsx";
+export { loader, meta } from "../lib/page-route.js";
 
 export default function HomePage() {
   const rootRef = useRef(null);

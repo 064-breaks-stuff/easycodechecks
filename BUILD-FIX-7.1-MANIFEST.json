@@ -1,0 +1,26 @@
+{
+  "patch": "7.1",
+  "replaces": [
+    "tests/route-boundaries.test.js"
+  ],
+  "dependency_changes": false,
+  "application_changes": false,
+  "validation": {
+    "native_node_syntax": "passed",
+    "dynamic_import_meta_URL_path_removed": "confirmed",
+    "assertion_cases": "five preserved (four declarations, one runs for two routes)",
+    "installed_vitest_and_browser": "must run locally; not executed here"
+  },
+  "files": [
+    {
+      "path": "BUILD-FIX-7.1.md",
+      "sha256": "2965d245a7f9179a5fdda38d4a33830b4d6d72ba1a6e5962084706ce8da583e6",
+      "bytes": 2431
+    },
+    {
+      "path": "tests/route-boundaries.test.js",
+      "sha256": "1b223f69ab45ece663a480a88d6b42c701afd3db8ec9fd842d0e25c4704e4f91",
+      "bytes": 1988
+    }
+  ]
+}

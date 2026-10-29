@@ -8,7 +8,6 @@ import Arrow from "../home/Arrow.jsx";
 import { homeServices, homeIndustries, homeResources, projectInputs } from "../../content/home.js";
 import { getInteriorDetail, getQuoteContext, quoteHref } from "../../content/interior.js";
 import { site } from "../../content/site.js";
-import QuotePageBody from "../forms/QuotePageBody.jsx";
 import styles from "../../styles/interior.module.css";
 
 function PageCTA({ page }) {
@@ -74,7 +73,6 @@ export default function InteriorView({ page, relatedPages = [] }) {
     {page.id === "about" && <AboutBody />}
     {page.id === "blog" && <ResourcesBody />}
     {page.id === "contact" && <ContactBody />}
-    {page.id === "request-a-quote" && <QuotePageBody />}
     {!isContact && page.id !== "services" && page.id !== "industries" && <RelatedPages pages={relatedPages} />}
     {!isContact && <PageCTA page={page} />}
   </div>;

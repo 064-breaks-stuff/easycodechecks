@@ -1,0 +1,83 @@
+{
+  "batch": 7,
+  "baseline_commit": "f2d79272f2d375d4b5e829658ce3a473dc807b73",
+  "scope": "Asset-independent route payload isolation; no design, business, backend or dependency changes",
+  "replaces": [
+    "app/routes.js",
+    "app/routes/home.jsx",
+    "app/routes/page.jsx",
+    "app/components/interior/InteriorView.jsx",
+    "tests/interior.test.jsx"
+  ],
+  "dependency_changes": false,
+  "files": [
+    {
+      "path": "BATCH-7.md",
+      "sha256": "d514a3e1adb0e69763e44c79e48b0f9417062642a91aa9092a404380bdd21d4b",
+      "bytes": 5968
+    },
+    {
+      "path": "app/components/forms/QuotePageView.jsx",
+      "sha256": "655beaeeb8d83091e07c471ed23060a1f192f64c206595fbf1de410f111dd87f",
+      "bytes": 367
+    },
+    {
+      "path": "app/components/interior/InteriorView.jsx",
+      "sha256": "21cee6d87de9ee901bf215423eee8e45b6fc9793f87cb2e2435715f96607e210",
+      "bytes": 6822
+    },
+    {
+      "path": "app/lib/page-route.js",
+      "sha256": "1d1054b3ac0c6c79137e058b7d5c8a9ce47470b83dd58b7e922a40f0d2c493a4",
+      "bytes": 1036
+    },
+    {
+      "path": "app/routes.js",
+      "sha256": "dbb7781db2113fa911d85e0ba10eaa8ef52eec5c2fe89b14e125f03588dc26d8",
+      "bytes": 438
+    },
+    {
+      "path": "app/routes/home.jsx",
+      "sha256": "446d8fe898b6a563a5d09fb15dceb87a1d8a62d8b9ec69fa0e51552b450a8cf7",
+      "bytes": 1156
+    },
+    {
+      "path": "app/routes/page.jsx",
+      "sha256": "a64352b33b450a09e5c79ad0f09e87d11e44bfb7fad114d3bbb1f021447afdd6",
+      "bytes": 356
+    },
+    {
+      "path": "app/routes/quote.jsx",
+      "sha256": "26b0384542a0af120cf19cb71af8f7bfaed1a8f9af118b56fd17275e5175b532",
+      "bytes": 311
+    },
+    {
+      "path": "scripts/lib/static-import-graph.mjs",
+      "sha256": "d9f4bceefba977eb8955af4d8886c84d9a556e3c5933498799e5fb6e7b4d740d",
+      "bytes": 928
+    },
+    {
+      "path": "tests/e2e/payload.spec.js",
+      "sha256": "366a57a5053b4bc81e9a04b0abd0f4f8e84194b9b7c016cf9d060174666516f1",
+      "bytes": 1750
+    },
+    {
+      "path": "tests/interior.test.jsx",
+      "sha256": "2531abbac3927ef91694fa356c22fd5121fb0d59cbc0846a3fbc86c5fc1fcf95",
+      "bytes": 3394
+    },
+    {
+      "path": "tests/route-boundaries.test.js",
+      "sha256": "1e6390d55f695fb5aefc7a1ea571cddc300e93029839467f5a438be319f56a2b",
+      "bytes": 1904
+    }
+  ],
+  "validation": {
+    "existing_source_hash_reconstruction": "passed",
+    "plain_js_mjs_node_syntax": "passed",
+    "shared_route_helpers": "Node assertions passed with synthetic data fixtures",
+    "static_graph_helper": "real temporary-file assertions passed",
+    "relative_import_targets": "resolved",
+    "react_vitest_build_browser": "must run locally; not executed here"
+  }
+}
