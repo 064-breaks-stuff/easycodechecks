@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "react-router dev",
     "validate:content": "node scripts/validate-content.mjs",
-    "build": "npm run validate:content && react-router build && node scripts/generate-sitemap.mjs",
+    "build": "npm run validate:content && react-router build && node scripts/generate-sitemap.mjs && node scripts/prepare-pages.mjs",
     "preview": "node scripts/preview.mjs",
     "test": "vitest run",
     "test:watch": "vitest",

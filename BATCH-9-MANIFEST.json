@@ -1,0 +1,60 @@
+{
+  "batch": 9,
+  "baseline_commit": "a8a4f884f12e245dd11b2ced55b7d6050088d5c4",
+  "scope": "Static Cloudflare Pages preview preparation only; no deployment, DNS, secrets or runtime backend",
+  "replaces": [
+    "package.json",
+    "public/_headers"
+  ],
+  "dependency_changes": false,
+  "validation": {
+    "baseline_package_reconstruction": "git blob SHA matched",
+    "native_js_mjs_syntax": "passed",
+    "artifact_IO_and_guards": "passed with mock build artifacts",
+    "relative_imports": "resolved",
+    "react_vitest_build_browser": "must run locally",
+    "cloudflare_runtime": "not deployed or tested"
+  },
+  "files": [
+    {
+      "path": "BATCH-9.md",
+      "sha256": "90838c3d5d4fb6c76a2e22372f49b7646651cfc1fd72e78ec5972782a2e056a8",
+      "bytes": 4509
+    },
+    {
+      "path": "docs/cloudflare-preview.md",
+      "sha256": "8fde4f18a91cd70610c9b95f12fe5ed5d18d8c015c8cc669fb5851fad87f8b85",
+      "bytes": 3801
+    },
+    {
+      "path": "package.json",
+      "sha256": "c7d6fa076dc9342a34ea35735ab4d2d1a68e4ebf324f3e1790ace4d5da8224a9",
+      "bytes": 1177
+    },
+    {
+      "path": "public/_headers",
+      "sha256": "08ab2c1439e4f30bba40d259b6271fdc05c492b4df6f2508697fbc50ea5d4c10",
+      "bytes": 273
+    },
+    {
+      "path": "scripts/lib/pages-artifact.mjs",
+      "sha256": "c5d82a63074ffc48c166a42d17dfbacf6cfd947394ef9b1adc0519ba2aae0dbd",
+      "bytes": 2620
+    },
+    {
+      "path": "scripts/prepare-pages.mjs",
+      "sha256": "22461b8dc1f27841ec144a5e6a84480622d39e9be064a1c73b3a33f1837a4721",
+      "bytes": 432
+    },
+    {
+      "path": "tests/e2e/pages-preview.spec.js",
+      "sha256": "611b3fe3e0c50520f956172fad89cf8dfd449a03ee250de5b52a9f5f3bfb7ac4",
+      "bytes": 857
+    },
+    {
+      "path": "tests/pages-artifact.test.js",
+      "sha256": "092b52b298211a8a2b47cfc387cdda8f6fff0484fe2b36128170f5408cba3084",
+      "bytes": 2337
+    }
+  ]
+}
