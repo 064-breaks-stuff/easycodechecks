@@ -1,10 +1,8 @@
-import { defineConfig } from "vite";
-import { reactRouter } from "@react-router/dev/vite";
+import { defineConfig } from "vitest/config";
 
 export default defineConfig({
-  plugins: [reactRouter()],
-  server: {
-    port: 5173,
-    strictPort: true,
+  test: {
+    environment: "node",
+    include: ["tests/**/*.test.js"],
   },
 });
