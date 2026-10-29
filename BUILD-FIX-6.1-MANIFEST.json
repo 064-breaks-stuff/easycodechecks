@@ -1,0 +1,54 @@
+{
+  "patch": "6.1",
+  "repository_observed_commit": "f3bcc6f95e680fe4627d80ca8c27e0623de66954",
+  "local_target": "Batch 6 installation evidenced by paste.txt; not yet pushed",
+  "replaces": [
+    "package.json",
+    "playwright.config.js"
+  ],
+  "dependency_changes": false,
+  "checks": {
+    "delivered_js_syntax": "passed",
+    "real_loopback_http_fixture": "passed",
+    "react_build": "not executed here",
+    "windows_playwright": "must rerun locally",
+    "npm_audit": "unresolved; full report requested"
+  },
+  "files": [
+    {
+      "path": "BUILD-FIX-6.1.md",
+      "sha256": "0d7861b9ec01c4d304b72b2c2cacd67f29b59c72306283e512e2b84a1a4835e8",
+      "bytes": 5081
+    },
+    {
+      "path": "package.json",
+      "sha256": "46c1ec9d36e45ff3063906033204c275259106a5a444a8673e6d02ce92ffcec0",
+      "bytes": 1142
+    },
+    {
+      "path": "playwright.config.js",
+      "sha256": "d6b990eb7da1acc5600cd1279f53332c12566222e9c8965dbe66d51d76bc4051",
+      "bytes": 1207
+    },
+    {
+      "path": "scripts/lib/static-preview.mjs",
+      "sha256": "f6a55726df12130cdcd71edd5bbc65550910b3633c13440713eccc4290bda996",
+      "bytes": 3622
+    },
+    {
+      "path": "scripts/preview.mjs",
+      "sha256": "d7b4e55a87c45490a4084c25f699b2c158047089c7fb8fd1a277990be555ed61",
+      "bytes": 1761
+    },
+    {
+      "path": "tests/e2e/direct-html.spec.js",
+      "sha256": "1fadbe45980e054f8a4e7704746dd83211b278b9bb972e6907f5e05ba5aa59f2",
+      "bytes": 828
+    },
+    {
+      "path": "tests/static-preview.test.js",
+      "sha256": "39b55bd7dee64ce7585e7e7edc5698b1dcab69e4b0c2a48fb31d8e62846ec25d",
+      "bytes": 2787
+    }
+  ]
+}

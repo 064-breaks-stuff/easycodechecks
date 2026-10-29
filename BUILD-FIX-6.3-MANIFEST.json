@@ -1,0 +1,36 @@
+{
+  "patch": "6.3",
+  "replaces": [
+    "app/components/forms/QuoteForm.jsx"
+  ],
+  "dependency_changes": false,
+  "edit_scope": "Only replace noscript notice with explicit hydration-state paragraph; form behavior unchanged",
+  "validation": {
+    "baseline_sha256_match": "passed",
+    "isolated_edit_reversal": "passed",
+    "zip_integrity": "checked at packaging",
+    "react_tests_and_browser": "not executed here"
+  },
+  "files": [
+    {
+      "path": "BUILD-FIX-6.3.md",
+      "sha256": "70b597cc9b982b8ab965a6b38d1860ad1f074e3e1dd7e8b0034fe47fe2cfd083",
+      "bytes": 3172
+    },
+    {
+      "path": "app/components/forms/QuoteFallbackNotice.jsx",
+      "sha256": "acabd100347206f08fd878f281696c084a44011717b3dd943834f69d9b645fd4",
+      "bytes": 385
+    },
+    {
+      "path": "app/components/forms/QuoteForm.jsx",
+      "sha256": "5ecfdc88f9f4d6e4fb121be768c6afa1867e84fbdfe505c1a68c5f0d506caf81",
+      "bytes": 7901
+    },
+    {
+      "path": "tests/quote-fallback.test.jsx",
+      "sha256": "98a7dea8f2db96a3f35178af6aa635cac1512ea3df0f3da8974c23476e4e0f1a",
+      "bytes": 1270
+    }
+  ]
+}

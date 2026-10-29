@@ -1,0 +1,101 @@
+{
+  "batch": 6,
+  "baseline_commit": "f3bcc6f95e680fe4627d80ca8c27e0623de66954",
+  "scope": "Approved browser-QA and generated-asset inventory; production app behavior unchanged",
+  "replaces": [
+    "package.json",
+    ".gitignore"
+  ],
+  "dependency_changes": {
+    "dev_added": {
+      "@playwright/test": "^1.55.0"
+    },
+    "lockfile": "regenerate locally with npm install",
+    "browser_binaries": "install Chromium locally with npx playwright install chromium"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "0226f36f8893c11ad62eba53bb56e2d68244e19d1ee128356c1b739041ee55c7",
+      "bytes": 174
+    },
+    {
+      "path": "BATCH-6.md",
+      "sha256": "74cd1fa80ebc904e25c379443c6989e641db365523004587d5974fac9e8045e9",
+      "bytes": 8200
+    },
+    {
+      "path": "package.json",
+      "sha256": "de0af604faf2e5977c57300517c781f907cadeb49ab30c4c46faa84f5f99c117",
+      "bytes": 1152
+    },
+    {
+      "path": "playwright.config.js",
+      "sha256": "550858dbb370863192382548ee2710378450af26847639d8e81a3c5fc6591ede",
+      "bytes": 1260
+    },
+    {
+      "path": "scripts/analyze-build.mjs",
+      "sha256": "358bc66cd0b75f93532cf469d6b76ee18eec98feb0d8c232229e91d8a9e79e8f",
+      "bytes": 2140
+    },
+    {
+      "path": "scripts/lib/browser-report.mjs",
+      "sha256": "1be87c5001391b6ed4e7122512b3339c7a51c988bbe93b4c531a9dbbf50ed7bd",
+      "bytes": 1432
+    },
+    {
+      "path": "scripts/run-browser-tests.mjs",
+      "sha256": "da8f06f147c74ffcbb8d11259f7152337b2df931052ad9b365687ff9576a2347",
+      "bytes": 3006
+    },
+    {
+      "path": "tests/browser-report.test.js",
+      "sha256": "3722ec4d25f4b34a966a46a262ae9d3ba19c1c7b58d463fe6158b7f6bc8ea8c7",
+      "bytes": 1326
+    },
+    {
+      "path": "tests/build-assets.test.js",
+      "sha256": "a597811186f823d84d3838b37107c6c2ca748a077469e6ff8ee7597c1ad995b0",
+      "bytes": 1229
+    },
+    {
+      "path": "tests/e2e/fallbacks.spec.js",
+      "sha256": "30656480f8c721d4d9aa4463b0572dc2e009bc4573c6b55ec34d38af2d642172",
+      "bytes": 2516
+    },
+    {
+      "path": "tests/e2e/fixtures.js",
+      "sha256": "2c9bc0d060e62b44e82e61d707408782975b8f7b8886b5cbe6ff0c7179d0a9c7",
+      "bytes": 1324
+    },
+    {
+      "path": "tests/e2e/navigation.spec.js",
+      "sha256": "5761f3fd5d8b55b9382a501f6262a9a1d4b1eae2942dd0af2537f18916bd0cec",
+      "bytes": 3020
+    },
+    {
+      "path": "tests/e2e/quote.spec.js",
+      "sha256": "225b99f45e5ec25379a1a076e8326723006f387f844e756ea60ae2341cb79686",
+      "bytes": 3844
+    },
+    {
+      "path": "tests/e2e/routes.spec.js",
+      "sha256": "e331a6292ce16214f0591225a0cd7091b52b11f1f0c7de71a56f493fdbc61bb8",
+      "bytes": 1971
+    }
+  ],
+  "validation": {
+    "baseline": "Committed 55-test/build/prerender report reviewed, full Batch 5 diff reviewed",
+    "delivered_js_mjs_syntax": "passed",
+    "report_helper_assertions": "passed",
+    "asset_inventory_real_io_and_gzip": "passed with synthetic build artifacts, not a React production build",
+    "relative_import_targets": "resolved",
+    "production_app_files_modified": 0,
+    "npm_install": "not executed",
+    "new_unit_suite": "not executed",
+    "chromium_install": "not executed",
+    "playwright_suite": "not executed",
+    "react_build": "not executed here"
+  }
+}

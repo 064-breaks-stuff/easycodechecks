@@ -1,0 +1,24 @@
+{
+  "patch": "6.2",
+  "replaces": [
+    "tests/e2e/fallbacks.spec.js"
+  ],
+  "dependency_changes": false,
+  "application_changes": false,
+  "validation": {
+    "native_node_syntax": "passed",
+    "browser_execution": "not executed here; rerun locally"
+  },
+  "files": [
+    {
+      "path": "BUILD-FIX-6.2.md",
+      "sha256": "9a1f23f2b88254b855f3e6f9b28c3e852dfbd5abae23aacfc09eff3e233c7d71",
+      "bytes": 3275
+    },
+    {
+      "path": "tests/e2e/fallbacks.spec.js",
+      "sha256": "252b9ad77dfb4fcced117953f9c273da51612ff0e27f883f4708f8713cf18e5b",
+      "bytes": 2998
+    }
+  ]
+}

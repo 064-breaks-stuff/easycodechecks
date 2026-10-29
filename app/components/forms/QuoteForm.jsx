@@ -9,6 +9,7 @@ import { quoteUi, quoteFieldLabels } from "../../content/quote.js";
 import { site } from "../../content/site.js";
 import FormField from "./FormField.jsx";
 import QuoteReview from "./QuoteReview.jsx";
+import QuoteFallbackNotice from "./QuoteFallbackNotice.jsx";
 import styles from "../../styles/quote.module.css";
 
 export default function QuoteForm() {
@@ -66,7 +67,7 @@ export default function QuoteForm() {
   return (
     <div className={styles.quoteRoot}>
       <div className={styles.notice} id="quote-preview-notice"><p className={styles.localBadge}>PREVIEW ONLY</p><h2>{quoteUi.noticeTitle}</h2><p>{quoteUi.noticeText}</p><p>To contact the team directly, email <a href={`mailto:${quoteUi.notificationRecipient}`}>{quoteUi.notificationRecipient}</a> or call <a href={site.phone.href}>{site.phone.display}</a>.</p></div>
-      <noscript><p className={styles.noScript}>This local preview requires JavaScript. The fields stay disabled without it. Use the email or telephone links above instead.</p></noscript>
+      <QuoteFallbackNotice hydrated={hydrated} />
       <form noValidate data-ui-only="true" aria-label="Project inquiry preview" aria-describedby="quote-preview-notice" onSubmit={(event) => {
         event.preventDefault();
         if (hydrated) void validate(event);
