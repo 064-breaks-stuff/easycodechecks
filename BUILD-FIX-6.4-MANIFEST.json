@@ -1,0 +1,27 @@
+{
+  "patch": "6.4",
+  "baseline_commit": "64e90a880383d8c5e8786e8541e92f0cb1666742",
+  "replaces": [
+    "package.json"
+  ],
+  "dependency_changes": {
+    "vitest": "^3.2.4 -> ^4.1.12"
+  },
+  "validation": {
+    "package_json_parse_and_isolated_diff": "passed",
+    "npm_registry_resolution": "not executed; lockfile must be regenerated locally",
+    "tests_build_browser": "not executed here"
+  },
+  "files": [
+    {
+      "path": "BUILD-FIX-6.4.md",
+      "sha256": "9038de75780ad29b73113ede8bab2ba7b58fe26538d00a40d2a176d2437d73ad",
+      "bytes": 2900
+    },
+    {
+      "path": "package.json",
+      "sha256": "f164e0aa1f0e1be2fd9ccf68cbc3ea19d59f97ecf70a4a2ad535668ec55b82a3",
+      "bytes": 1143
+    }
+  ]
+}
