@@ -1,0 +1,112 @@
+{
+  "batch": 2,
+  "baseline_commit": "75b3326259cc6dbf64906417b26ca165195a932c",
+  "replaces": [
+    "app/routes.js",
+    "vitest.config.js"
+  ],
+  "files": [
+    {
+      "path": "BATCH-2.md",
+      "sha256": "740a440bb6c781aec704c056ca80a7b035a3e23207edd1330cba27b1d3cea3ab",
+      "bytes": 5724
+    },
+    {
+      "path": "app/components/home/Arrow.jsx",
+      "sha256": "9976cb14445554a525815135e0cd6906e3cf6cf212b5f8aac3cb73b972613e39",
+      "bytes": 324
+    },
+    {
+      "path": "app/components/home/SectionHeading.jsx",
+      "sha256": "293e9316bd1e9008227f5cfd387d557a83fd38950538eeca600dd03d0e04d842",
+      "bytes": 508
+    },
+    {
+      "path": "app/components/home/SignIllustration.jsx",
+      "sha256": "20573a0bd058836f1c38b72598dfc2f3417b28df513a0bd7777bd0f480bf582c",
+      "bytes": 1961
+    },
+    {
+      "path": "app/components/home/SitePlan.jsx",
+      "sha256": "bd9fe21ff407bb07df1fe3141234ba1ab0a7b8d1e7747985641da5a65406c75b",
+      "bytes": 3275
+    },
+    {
+      "path": "app/content/home.js",
+      "sha256": "3284e5689bd719d41d855833f69b861372f066835bd3e263b8b21cdbc8564a03",
+      "bytes": 3786
+    },
+    {
+      "path": "app/routes.js",
+      "sha256": "9a567bc96af0f5ed3eaf22958abe4f5693e7eb4bb2c78a8bc5cdf7c378dd8165",
+      "bytes": 338
+    },
+    {
+      "path": "app/routes/home.jsx",
+      "sha256": "800db94ae8a90b78cc2cbdf89679d7080fdae6e38f6cd69c89fa2b2dcf791a6a",
+      "bytes": 1006
+    },
+    {
+      "path": "app/sections/home/CompanyOverview.jsx",
+      "sha256": "7127c74cc20b14b07194cbb4e3e1d705a2a9ff24ef493023d3491b3771861c86",
+      "bytes": 1719
+    },
+    {
+      "path": "app/sections/home/FinalCTA.jsx",
+      "sha256": "e154a6ca64217789564b5931d1000378a50f87a955d9fd37c9f620b3f64a8475",
+      "bytes": 1150
+    },
+    {
+      "path": "app/sections/home/HomeHero.jsx",
+      "sha256": "5b338ef20b552c0be09ff8a21e3011f91747b3537b0aeb07e4733e9b8d8b0796",
+      "bytes": 1859
+    },
+    {
+      "path": "app/sections/home/IndustriesOverview.jsx",
+      "sha256": "d23d71fa992e01cc58047a2f8435a314d6adb831696f7a75345cfa0308c5b812",
+      "bytes": 1661
+    },
+    {
+      "path": "app/sections/home/ProjectPreparation.jsx",
+      "sha256": "51f266ff85b027b4fc075bd9d83bdc79292af28d1ca95d8c6ab643786fc8f822",
+      "bytes": 1002
+    },
+    {
+      "path": "app/sections/home/ResearchOverview.jsx",
+      "sha256": "a410319fe77e9a00fd6edebbdd7b3425956c49a0b3bb097893b459d3bdd517db",
+      "bytes": 1802
+    },
+    {
+      "path": "app/sections/home/ResourcesPreview.jsx",
+      "sha256": "52b375ba13dee3adc2e941ee146d5d3b984e82b62ab60fe1f74fcff51df374f7",
+      "bytes": 1487
+    },
+    {
+      "path": "app/sections/home/ServicesOverview.jsx",
+      "sha256": "86d6072fb87ff6b10279aa19bafb281f9363e01c2a4f6e79b1c4cc5cb0ad2cc6",
+      "bytes": 1543
+    },
+    {
+      "path": "app/styles/home.module.css",
+      "sha256": "c2a6bcda80419a07847224a025012906fb5d9bacce451ebe941698d401d379dc",
+      "bytes": 15404
+    },
+    {
+      "path": "tests/home.test.jsx",
+      "sha256": "8e2892a34d5e172b44e510977b62a838c4ac7a0613a6a8bb03fda717822e3659",
+      "bytes": 1429
+    },
+    {
+      "path": "vitest.config.js",
+      "sha256": "193f785ccaa0bf65cb4a71c7e6e7b7284389538b7abfae8fe9168612557a0358",
+      "bytes": 164
+    }
+  ],
+  "validation": {
+    "relative_imports": "resolved against overlay and inspected baseline",
+    "css_braces": "balanced",
+    "npm_tests": "not executed",
+    "production_build": "not executed",
+    "browser_review": "not executed"
+  }
+}

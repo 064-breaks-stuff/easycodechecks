@@ -3,11 +3,11 @@ import { pages } from "./content/pages.js";
 
 export default [
   ...pages.map((page) =>
-    route(page.path, "routes/page.jsx", {
-      id: `page-${page.id}`,
-    }),
+    route(
+      page.path,
+      page.id === "home" ? "routes/home.jsx" : "routes/page.jsx",
+      { id: `page-${page.id}` },
+    ),
   ),
-  route("*", "routes/not-found.jsx", {
-    id: "not-found",
-  }),
+  route("*", "routes/not-found.jsx", { id: "not-found" }),
 ];
