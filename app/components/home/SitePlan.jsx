@@ -1,13 +1,16 @@
 import React from "react";
 import styles from "../../styles/home.module.css";
+import sceneStyles from "../../styles/scene.module.css";
 
-export default function SitePlan() {
+export default function SitePlan({ children = null, sceneReady = false }) {
   return (
     <figure className={styles.sitePlan}>
       <div className={styles.planTopline}>
         <span>SITE STUDY / 001</span>
         <span>CONCEPT VIEW</span>
       </div>
+      <div className={sceneStyles.stage}>
+        <div className={`${sceneStyles.poster} ${sceneReady ? sceneStyles.posterHidden : ""}`}>
       <svg className={styles.planDrawing} viewBox="0 0 620 540" fill="none" aria-hidden="true" focusable="false">
         <g stroke="#72988a" strokeWidth="1">
           <path d="m44 348 297-170 233 135-295 172z" fill="#183b31" />
@@ -52,6 +55,9 @@ export default function SitePlan() {
         </g>
         <text x="536" y="436" fill="#a6bbaf" fontFamily="monospace" fontSize="11">N</text>
       </svg>
+        </div>
+        {children}
+      </div>
       <figcaption className={styles.planCaption}>
         <span><i aria-hidden="true" /> From site context to signage requirements.</span>
         <span>Illustrative only · Not a permit drawing</span>

@@ -1,0 +1,131 @@
+{
+  "batch": 3,
+  "baseline_commit": "54437c6dbecc3df7f9074097665b13324d9dec01",
+  "replaces": [
+    "package.json",
+    "vitest.config.js",
+    "app/routes/home.jsx",
+    "app/sections/home/HomeHero.jsx",
+    "app/components/home/SitePlan.jsx"
+  ],
+  "dependency_changes": {
+    "added": {
+      "animejs": "^4.1.3",
+      "three": "^0.180.0",
+      "@react-three/fiber": "^9.3.0"
+    },
+    "lockfile": "must be regenerated locally by npm install"
+  },
+  "files": [
+    {
+      "path": "BATCH-3.md",
+      "sha256": "d25a028fc3be0bca9e86f3efc0f1baac70521d1f3750142993bb2d8c569059b3",
+      "bytes": 7419
+    },
+    {
+      "path": "app/components/home/HeroVisual.jsx",
+      "sha256": "33a27b5710e2e97b703f7f0bf82f1d07978003500350359b617436c06e7054b5",
+      "bytes": 3694
+    },
+    {
+      "path": "app/components/home/SitePlan.jsx",
+      "sha256": "1f3b6fa671b3196024d01545e1265d3705ad203b2b1feddb533e7d4bda146f26",
+      "bytes": 3556
+    },
+    {
+      "path": "app/hooks/useHomeMotion.js",
+      "sha256": "ee10094935f618f2065e22d8252a728ada5e718682a09a644dfb8d3d5b46974b",
+      "bytes": 2679
+    },
+    {
+      "path": "app/hooks/useInView.js",
+      "sha256": "d0695c7ea1267480ce68136be5c313cce6738cdc598819b66251797b87f35e20",
+      "bytes": 601
+    },
+    {
+      "path": "app/hooks/useMediaQuery.js",
+      "sha256": "69cc0481cbdb35f0439c1112b1d3deaf2104351e7dce4e082f60aa74ca991a8c",
+      "bytes": 446
+    },
+    {
+      "path": "app/hooks/usePageVisibility.js",
+      "sha256": "5b7ab0e3e5620997527c6ddda161ecd0691f215ff340b7615abe8dfbe05a7c86",
+      "bytes": 418
+    },
+    {
+      "path": "app/lib/motion-config.js",
+      "sha256": "cf5b121e439a892a77bd5234e7edf9bfe3972b6adbf61c294679c875157b882d",
+      "bytes": 657
+    },
+    {
+      "path": "app/routes/home.jsx",
+      "sha256": "3610f65890eaa3c70478fac29d375c0474836c003f55cb8eb2ab3ac6b0b86fc5",
+      "bytes": 1146
+    },
+    {
+      "path": "app/sections/home/HomeHero.jsx",
+      "sha256": "863e2c44858b75095da336a18c2a226bc4a65cdcac19bd84d7d87a4c9e072990",
+      "bytes": 1950
+    },
+    {
+      "path": "app/styles/scene.module.css",
+      "sha256": "d6684458770484276a44d809e9673c45305b929b82dacbb8d90006f8fe373e85",
+      "bytes": 663
+    },
+    {
+      "path": "app/three/HeroCanvas.client.jsx",
+      "sha256": "ee0c3612a9915034b5644a6d6085510bc735d82b778977cfc8493029aad82f72",
+      "bytes": 1540
+    },
+    {
+      "path": "app/three/HeroScene.jsx",
+      "sha256": "4ae60bf3c42214093bdf7515e033249158abd0c9c1181f7b120f4085bd7302b5",
+      "bytes": 2946
+    },
+    {
+      "path": "app/three/SceneBoundary.jsx",
+      "sha256": "7be17072d3dd7bb36906ed967913415a62415946da2c2d926ea65845620f8985",
+      "bytes": 416
+    },
+    {
+      "path": "app/three/SiteModel.jsx",
+      "sha256": "fd151d332b61f8abdd9c09fe7a67494503e6a5dbf9b92eec608620d1d2dfd017",
+      "bytes": 3291
+    },
+    {
+      "path": "app/three/scene-resources.js",
+      "sha256": "c825944b30938c91713fabcb0d123f26b3bebc8a16bb0e91eb30345c4abe622e",
+      "bytes": 2052
+    },
+    {
+      "path": "package.json",
+      "sha256": "f8e542b86478814d7aa03deb0ab19dd30df3130b01fdc64050c43280e16fa701",
+      "bytes": 867
+    },
+    {
+      "path": "tests/motion.test.js",
+      "sha256": "13542319a92cb79dd01120f1fb671b8eb1b56a5cfee032318c97988dbd32173a",
+      "bytes": 1143
+    },
+    {
+      "path": "tests/scene-resources.test.js",
+      "sha256": "ab9fc15a1a8ec5f14cc9acbef699e453b513905b1bd8382aa3f3354fa3bbef11",
+      "bytes": 947
+    },
+    {
+      "path": "vitest.config.js",
+      "sha256": "3c78303c2bfcdbf99b7784348b074c50099420608eb7d10b5236b6a09a97a7e9",
+      "bytes": 204
+    }
+  ],
+  "validation": {
+    "plain_js_node_syntax": "passed",
+    "motion_math_node_assertions": "passed",
+    "relative_imports": "resolved",
+    "css_braces": "balanced",
+    "npm_install": "not executed",
+    "vitest": "not executed",
+    "production_build": "not executed",
+    "browser_webgl": "not executed"
+  }
+}
