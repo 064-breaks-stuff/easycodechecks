@@ -1,0 +1,45 @@
+{
+  "batch": 8,
+  "baseline_commit": "f5dc16dd544899bad47b0a792bc78411c979eb98",
+  "scope": "Data-only SEO/share metadata; assets deferred, noindex and UI-only behavior preserved",
+  "replaces": [
+    "app/lib/page-route.js",
+    "tests/e2e/routes.spec.js"
+  ],
+  "dependency_changes": false,
+  "validation": {
+    "baseline_shared_helper_hash": "matched",
+    "unchanged_loader": "confirmed",
+    "native_js_syntax": "passed",
+    "metadata_graph_node_assertions": "passed using synthetic page records",
+    "relative_imports": "resolved",
+    "react_vitest_build_browser": "must run locally; not executed here"
+  },
+  "files": [
+    {
+      "path": "BATCH-8.md",
+      "sha256": "2fb878ef2123a97a63e5ae4741f315837a0adc7416ea47fffdae6fb54f59a187",
+      "bytes": 5056
+    },
+    {
+      "path": "app/lib/page-route.js",
+      "sha256": "5f34f714e1bce666fb385d5ff28aa060bdc18d1fa9e5a26ac4a10d2ebf9ab020",
+      "bytes": 584
+    },
+    {
+      "path": "app/lib/seo.js",
+      "sha256": "a164edf0976a338e148a02c118420bd8aa7d4e726028ab9dcdff99066876bcbb",
+      "bytes": 3645
+    },
+    {
+      "path": "tests/e2e/routes.spec.js",
+      "sha256": "f5a71beac1bc6d85458826d15d2d0c806326e431a441f9b2174d13c144e36256",
+      "bytes": 2630
+    },
+    {
+      "path": "tests/seo.test.js",
+      "sha256": "add4fb0996033f009d45bbb924cf2626df82973288f8560c215d19d3932380c6",
+      "bytes": 2496
+    }
+  ]
+}

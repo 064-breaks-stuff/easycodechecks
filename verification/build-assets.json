@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-10-29T19:02:04.574Z",
+  "generatedAt": "2026-10-29T19:14:50.141Z",
   "measurement": "Generated JS/CSS file sizes and Node gzip estimates; not browser timing, Brotli transfer, or first-load totals.",
   "allGeneratedAssets": {
     "count": 20,
-    "bytes": 1523153,
-    "gzipBytes": 442599
+    "bytes": 1525043,
+    "gzipBytes": 443310
   },
   "referenceLargeChunkBytes": 512000,
   "largeJavaScript": [
     {
-      "file": "assets/HeroCanvas.client-CoocO_eA.js",
+      "file": "assets/HeroCanvas.client-D4FPEZ1H.js",
       "kind": "javascript",
       "bytes": 889543,
-      "gzipBytes": 240268
+      "gzipBytes": 240269
     }
   ],
   "assets": [
     {
-      "file": "assets/HeroCanvas.client-CoocO_eA.js",
+      "file": "assets/HeroCanvas.client-D4FPEZ1H.js",
       "kind": "javascript",
       "bytes": 889543,
-      "gzipBytes": 240268
+      "gzipBytes": 240269
     },
     {
       "file": "assets/entry.client-D-7Dj1q9.js",
@@ -29,10 +29,10 @@
       "gzipBytes": 67262
     },
     {
-      "file": "assets/quote-BJenoxzo.js",
+      "file": "assets/quote-DBYC8Q3C.js",
       "kind": "javascript",
       "bytes": 134295,
-      "gzipBytes": 41990
+      "gzipBytes": 41991
     },
     {
       "file": "assets/jsx-runtime-B-IgoNgc.js",
@@ -47,10 +47,10 @@
       "gzipBytes": 13602
     },
     {
-      "file": "assets/home-DcONihi7.js",
+      "file": "assets/home-4HyOi6NM.js",
       "kind": "javascript",
       "bytes": 21842,
-      "gzipBytes": 7588
+      "gzipBytes": 7590
     },
     {
       "file": "assets/home-D4jYk6TU.css",
@@ -65,7 +65,7 @@
       "gzipBytes": 3566
     },
     {
-      "file": "assets/PageHero-fXuDc_9m.js",
+      "file": "assets/PageHero-C5X-yr8U.js",
       "kind": "javascript",
       "bytes": 11865,
       "gzipBytes": 4268
@@ -83,22 +83,22 @@
       "gzipBytes": 2944
     },
     {
-      "file": "assets/page-Dkbaknjm.js",
+      "file": "assets/page-vYA0hn-j.js",
       "kind": "javascript",
       "bytes": 7847,
-      "gzipBytes": 2626
+      "gzipBytes": 2627
     },
     {
-      "file": "assets/manifest-a07dd114.js",
+      "file": "assets/manifest-98a16043.js",
       "kind": "javascript",
       "bytes": 7838,
-      "gzipBytes": 797
+      "gzipBytes": 801
     },
     {
-      "file": "assets/page-route-bGXa-fa0.js",
+      "file": "assets/page-route-DHTiQP2I.js",
       "kind": "javascript",
-      "bytes": 5896,
-      "gzipBytes": 2547
+      "bytes": 7786,
+      "gzipBytes": 3247
     },
     {
       "file": "assets/quote-8OYU5H30.css",
@@ -125,10 +125,10 @@
       "gzipBytes": 422
     },
     {
-      "file": "assets/home-BnF8YDhR.js",
+      "file": "assets/home-CapC721P.js",
       "kind": "javascript",
       "bytes": 209,
-      "gzipBytes": 169
+      "gzipBytes": 171
     },
     {
       "file": "assets/Container-ikckZ4OW.js",

@@ -1,10 +1,10 @@
 {
-  "startedAt": "2026-10-29T19:01:54.595Z",
+  "startedAt": "2026-10-29T19:14:40.206Z",
   "baseline": "f3bcc6f95e680fe4627d80ca8c27e0623de66954",
   "passed": true,
   "stage": "complete",
   "scope": "Local production-preview Chromium QA; not a live deployment or hardware-GPU certification.",
-  "checkedOutCommit": "f2d79272f2d375d4b5e829658ce3a473dc807b73",
+  "checkedOutCommit": "f5dc16dd544899bad47b0a792bc78411c979eb98",
   "sourceHashes": {
     "app/components/Container.jsx": "850b842af4f6032a8dc28c6f7f5a3e44965c7c495ad3aea725d1e31c98c26f8b",
     "app/components/forms/FormField.jsx": "cf48b8d93384bab4bd2bef8311f94fb55ec53adc19c3ce23b40cb98f936b6ba4",
@@ -37,7 +37,8 @@
     "app/lib/content.js": "40cb5766f9218a37e34bad3e7c973071cea670fef092b9814a6f62fceaa55176",
     "app/lib/motion-config.js": "cf5b121e439a892a77bd5234e7edf9bfe3972b6adbf61c294679c875157b882d",
     "app/lib/navigation.js": "a213f68b3ab3673be80a4d4d6802d79b7f6448342af467a003d604e405c2cd29",
-    "app/lib/page-route.js": "1d1054b3ac0c6c79137e058b7d5c8a9ce47470b83dd58b7e922a40f0d2c493a4",
+    "app/lib/page-route.js": "5f34f714e1bce666fb385d5ff28aa060bdc18d1fa9e5a26ac4a10d2ebf9ab020",
+    "app/lib/seo.js": "a164edf0976a338e148a02c118420bd8aa7d4e726028ab9dcdff99066876bcbb",
     "app/root.jsx": "ae3020585b84c12af7bb2a3d6b0b778ce26057aaf76d88490e2b1e6686ff88c7",
     "app/routes/home.jsx": "446d8fe898b6a563a5d09fb15dceb87a1d8a62d8b9ec69fa0e51552b450a8cf7",
     "app/routes/not-found.jsx": "fa3f17d24eb78f0e3bd806eb2ca891ccd85265ea397594cf93ee481bdbc9e6b3",
@@ -79,10 +80,11 @@
     "BUILD-FIX-6.3-MANIFEST.json",
     "BUILD-FIX-6.4-MANIFEST.json",
     "BATCH-7-MANIFEST.json",
-    "BUILD-FIX-7.1-MANIFEST.json"
+    "BUILD-FIX-7.1-MANIFEST.json",
+    "BATCH-8-MANIFEST.json"
   ],
   "largeJavaScriptFiles": [
-    "assets/HeroCanvas.client-CoocO_eA.js"
+    "assets/HeroCanvas.client-D4FPEZ1H.js"
   ],
   "browser": {
     "passed": true,
@@ -97,9 +99,9 @@
       "mobile",
       "reduced-motion"
     ],
-    "durationMs": 29786.685,
+    "durationMs": 27409.09,
     "errors": [],
     "failedTests": []
   },
-  "finishedAt": "2026-10-29T19:02:35.039Z"
+  "finishedAt": "2026-10-29T19:15:18.161Z"
 }

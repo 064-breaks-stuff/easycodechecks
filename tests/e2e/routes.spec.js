@@ -14,7 +14,16 @@ for (const record of pages) {
     await expect(page.locator("h1")).toBeVisible();
     await expect(page).toHaveTitle(record.seoTitle);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
-    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", record.path === "/" ? site.url : `${site.url}${record.path}`);
+    const canonical = record.path === "/" ? site.url : `${site.url}${record.path}`;
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", canonical);
+    await expect(page.locator('meta[property="og:site_name"]')).toHaveAttribute("content", site.name);
+    await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute("content", "summary");
+    const jsonLd = page.locator('script[type="application/ld+json"]');
+    await expect(jsonLd).toHaveCount(1);
+    const graph = JSON.parse(await jsonLd.textContent());
+    expect(graph["@context"]).toBe("https://schema.org");
+    expect(graph["@graph"].find((node) => node["@type"] === "WebPage")?.url).toBe(canonical);
+    expect(graph["@graph"].find((node) => node["@type"] === "Organization")?.email).toBe(site.email);
     const fits = await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1);
     expect(fits, `Horizontal overflow at ${record.path}`).toBe(true);
     if (record.id !== "home") {
