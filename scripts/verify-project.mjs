@@ -6,15 +6,15 @@ import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import { pages } from "../app/content/pages.js";
 import { interiorDetails } from "../app/content/interior.js";
+import { quoteUi } from "../app/content/quote.js";
 import { createNpmInvocation } from "./lib/npm-command.mjs";
+import { verifyManifestIntegrity } from "./lib/manifest-integrity.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const report = {
-  startedAt: new Date().toISOString(),
-  node: process.version,
-  baseline: "81b82ee4dcd23129b66dcc6d85231da0ed55b070",
-  verifierVersion: "4.1",
-  checks: [],
+  startedAt: new Date().toISOString(), node: process.version,
+  baseline: "fe6f3bf70443f775c08302f29724f2a600be2ba9", verifierVersion: "5.0",
+  scope: "UI-only quote preview; no delivery integration", checks: [],
   browserVerification: "Not performed by this script; use the manual checklist.",
 };
 let failed = false;
@@ -26,11 +26,7 @@ function record(name, passed, detail = "") {
 function runNpm(task) {
   const invocation = createNpmInvocation(task);
   const result = spawnSync(invocation.command, invocation.args, {
-    cwd: root,
-    encoding: "utf8",
-    shell: false,
-    windowsHide: true,
-    maxBuffer: 20 * 1024 * 1024,
+    cwd: root, encoding: "utf8", shell: false, windowsHide: true, maxBuffer: 20 * 1024 * 1024,
   });
   const output = `${result.stdout ?? ""}${result.stderr ?? ""}`;
   process.stdout.write(output);
@@ -52,56 +48,36 @@ async function walk(directory) {
 async function checkSource() {
   const pkg = JSON.parse(await readFile(path.join(root, "package.json"), "utf8"));
   const lock = JSON.parse(await readFile(path.join(root, "package-lock.json"), "utf8"));
-  const rootPackage = lock.packages?.[""];
   for (const field of ["dependencies", "devDependencies"]) {
     const specs = pkg[field] ?? {};
-    const lockedSpecs = rootPackage?.[field] ?? {};
+    const lockedSpecs = lock.packages?.[""]?.[field] ?? {};
     const same = Object.keys(specs).length === Object.keys(lockedSpecs).length && Object.entries(specs).every(([name, value]) => lockedSpecs[name] === value);
     record(`lockfile ${field} declarations`, same);
   }
-  const manifestPath = path.join(root, "BATCH-3-MANIFEST.json");
-  if (existsSync(manifestPath)) {
-    const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
-    const mismatches = [];
-    for (const entry of manifest.files ?? []) {
-      const full = path.resolve(root, entry.path);
-      if (path.relative(root, full).startsWith("..") || path.isAbsolute(path.relative(root, full))) {
-        mismatches.push(`unsafe path: ${entry.path}`);
-        continue;
-      }
-      try {
-        const content = (await readFile(full, "utf8")).replace(/\r\n/g, "\n");
-        const hash = createHash("sha256").update(content).digest("hex");
-        if (hash !== entry.sha256) mismatches.push(entry.path);
-      } catch { mismatches.push(`missing: ${entry.path}`); }
-    }
-    record("previous batch file integrity (LF-normalized)", mismatches.length === 0, mismatches.join(", "));
-  } else {
-    record("previous batch manifest is present", false, "BATCH-3-MANIFEST.json is missing");
-  }
+  const integrity = await verifyManifestIntegrity(root);
+  record("active delivered-file integrity (newest approved version)", integrity.passed, `${integrity.checkedFiles} files; ${integrity.issues.join("; ")}`);
+  report.deliveryManifests = integrity.manifests;
   const fallback = await readFile(path.join(root, "app/routes/not-found.jsx"), "utf8");
   record("wildcard fallback has no server loader export", !/export\s+(?:async\s+)?function\s+loader\b|export\s+(?:const|let|var)\s+loader\b/.test(fallback));
-  const appFiles = await walk(path.join(root, "app"));
-  record("authored app is JavaScript, not TypeScript", !appFiles.some((file) => /\.tsx?$/.test(file)));
+  const sourceFiles = [...await walk(path.join(root, "app")), ...await walk(path.join(root, "shared"))];
+  record("authored app and shared code are JavaScript", !sourceFiles.some((file) => /\.tsx?$/.test(file)));
   const missing = [];
-  for (const file of appFiles.filter((entry) => /\.[cm]?jsx?$/.test(entry))) {
+  for (const file of sourceFiles.filter((entry) => /\.[cm]?jsx?$/.test(entry))) {
     const source = await readFile(file, "utf8");
-    const expressions = [
-      /(?:from\s+|import\s+)["'](\.[^"']+)["']/g,
-      /import\s*\(\s*["'](\.[^"']+)["']/g,
-    ];
-    for (const expression of expressions) {
+    for (const expression of [/(?:from\s+|import\s+)["'](\.[^"']+)["']/g, /import\s*\(\s*["'](\.[^"']+)["']/g]) {
       for (const match of source.matchAll(expression)) {
         try { await access(path.resolve(path.dirname(file), match[1])); }
         catch { missing.push(`${path.relative(root, file)} -> ${match[1]}`); }
       }
     }
   }
-  record("relative app import targets exist", missing.length === 0, missing.join("; "));
+  record("relative source import targets exist", missing.length === 0, missing.join("; "));
   record("seven approved detail routes have content", Object.keys(interiorDetails).length === 7);
-  const hashes = {};
-  for (const file of appFiles) hashes[path.relative(root, file).split(path.sep).join("/")] = createHash("sha256").update(await readFile(file)).digest("hex");
-  report.sourceHashes = hashes;
+  record("quote configuration is UI-only", quoteUi.mode === "preview-only" && quoteUi.notificationRecipient === "support@easycodechecks.com");
+  const formSource = await readFile(path.join(root, "app/components/forms/QuoteForm.jsx"), "utf8");
+  record("quote form source has no delivery/persistence calls", !/\b(?:fetch|XMLHttpRequest|sendBeacon|localStorage|sessionStorage)\b/.test(formSource));
+  report.sourceHashes = {};
+  for (const file of sourceFiles) report.sourceHashes[path.relative(root, file).split(path.sep).join("/")] = createHash("sha256").update(await readFile(file)).digest("hex");
 }
 async function checkBuiltPages() {
   const known = new Set(pages.map((page) => page.path));
@@ -123,24 +99,24 @@ async function checkBuiltPages() {
     }
     record(`internal links ${page.path}`, broken.length === 0, [...new Set(broken)].join(", "));
     if (page.id === "home") record("homepage static fallback is prerendered", html.includes("Not a permit drawing") && !html.includes("<canvas"));
-    if (page.id === "request-a-quote") record("quote page does not fake online submission", html.includes("Online submission is not connected yet.") && !html.includes("<form"));
+    if (page.id === "request-a-quote") {
+      const localForm = /<form\b[^>]*data-ui-only="true"/.test(html);
+      const noAction = !/<form\b[^>]*action=/.test(html);
+      const disabledBeforeHydration = /<fieldset\b[^>]*id="quote-ui-fields"[^>]*disabled/.test(html);
+      record("quote page exposes only a safe local preview", localForm && noAction && disabledBeforeHydration && html.includes("Online submission is not connected yet.") && html.includes("Validate &amp; preview") && !html.includes('type="file"'));
+    }
   }
 }
-
 try {
   const git = spawnSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8", shell: false });
   report.checkedOutCommit = git.status === 0 ? git.stdout.trim() : "Unavailable";
   await checkSource();
   runNpm("test");
-  const built = runNpm("build");
-  if (built) await checkBuiltPages();
-} catch (error) {
-  record("verification execution", false, error.message);
-}
+  if (runNpm("build")) await checkBuiltPages();
+} catch (error) { record("verification execution", false, error.message); }
 report.finishedAt = new Date().toISOString();
 report.passed = !failed;
 await mkdir(path.join(root, "verification"), { recursive: true });
-await writeFile(path.join(root, "verification", "latest.json"), `${JSON.stringify(report, null, 2)}
-`);
+await writeFile(path.join(root, "verification", "latest.json"), `${JSON.stringify(report, null, 2)}\n`);
 console.log(`Verification ${failed ? "FAILED" : "PASSED"}. Report: verification/latest.json`);
 process.exitCode = failed ? 1 : 0;

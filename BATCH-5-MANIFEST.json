@@ -1,0 +1,118 @@
+{
+  "batch": 5,
+  "baseline_commit": "fe6f3bf70443f775c08302f29724f2a600be2ba9",
+  "scope": "UI-only quote form; no submission, storage, notification delivery or uploads",
+  "replaces": [
+    "package.json",
+    "app/components/interior/InteriorView.jsx",
+    "scripts/verify-project.mjs",
+    "tests/interior.test.jsx"
+  ],
+  "dependency_changes": {
+    "react-hook-form": "^7.62.0",
+    "@hookform/resolvers": "^5.2.2",
+    "zod": "^4.1.5",
+    "lockfile": "regenerate locally with npm install"
+  },
+  "files": [
+    {
+      "path": "BATCH-5.md",
+      "sha256": "88fcfce444bbab810826c6d69fb27903f6b45d35a74060caa5a03ee344341adc",
+      "bytes": 8235
+    },
+    {
+      "path": "app/components/forms/FormField.jsx",
+      "sha256": "cf48b8d93384bab4bd2bef8311f94fb55ec53adc19c3ce23b40cb98f936b6ba4",
+      "bytes": 902
+    },
+    {
+      "path": "app/components/forms/QuoteForm.jsx",
+      "sha256": "a2b68a3a9842ee660c8f792d3ee520afc729227d50810fbd961a2847f6f9152d",
+      "bytes": 7977
+    },
+    {
+      "path": "app/components/forms/QuotePageBody.jsx",
+      "sha256": "4813fe995673d8f1ddace6ce529f2e8bf5c45360a04778014c406e91877f0f83",
+      "bytes": 857
+    },
+    {
+      "path": "app/components/forms/QuoteReview.jsx",
+      "sha256": "c62a70391c042b3060aa8446e0123410703a8b714b634cf413f1cf82921c74b2",
+      "bytes": 1446
+    },
+    {
+      "path": "app/components/interior/InteriorView.jsx",
+      "sha256": "efd6060e157a76b06ccc1b2de3ed574f5b42ea8be34c303f3d4cc6626aa4150e",
+      "bytes": 6935
+    },
+    {
+      "path": "app/content/quote.js",
+      "sha256": "421134630ae8aa51a94aa014f62582bc3afa57da98478cf8397b05ee3c684023",
+      "bytes": 826
+    },
+    {
+      "path": "app/styles/quote.module.css",
+      "sha256": "8bec8f189c2c92d0be2fae777547500770d3d567371f14b1372e141b8290dd2c",
+      "bytes": 5407
+    },
+    {
+      "path": "package.json",
+      "sha256": "d3d2d8e73dc430efab9fe74975247834651eae96c46be2d3a9f43518b0e9c618",
+      "bytes": 959
+    },
+    {
+      "path": "scripts/lib/manifest-integrity.mjs",
+      "sha256": "784993dc69fe50421adb540b554151a452b93561ff6d545c90febcfb398d868d",
+      "bytes": 1725
+    },
+    {
+      "path": "scripts/verify-project.mjs",
+      "sha256": "ed89a92f5938ac44f673e9e9e8b57bc6c4fc392fdaf368cf9a5795061ec58f35",
+      "bytes": 7534
+    },
+    {
+      "path": "shared/quote-options.js",
+      "sha256": "d98283b1f6ae5cda4190c829c4016324aa68d45c66fcf8b24262cf37ff53ccc9",
+      "bytes": 1392
+    },
+    {
+      "path": "shared/quote-schema.js",
+      "sha256": "f858d9054c14c2cd93a83f876256934b26de7ec593a5cd361939c3322fe0b465",
+      "bytes": 1379
+    },
+    {
+      "path": "tests/interior.test.jsx",
+      "sha256": "da212cc03692a15584ca41671f85d022eb02b9bb4c2001059542f26145a5b5cf",
+      "bytes": 3222
+    },
+    {
+      "path": "tests/manifest-integrity.test.js",
+      "sha256": "e022a7e73fc8ab1a3d8a0119e244ce9a34859a877b9b6562d8791cece754e72a",
+      "bytes": 1470
+    },
+    {
+      "path": "tests/quote-form.test.jsx",
+      "sha256": "899d77212df25c90e91b60b95c6ea2ccd71039c2455b295a9b67933baf605a0d",
+      "bytes": 1617
+    },
+    {
+      "path": "tests/quote-schema.test.js",
+      "sha256": "324f60a0b9f835a8735c4aa22c9aa482d75a228a6eb331f77b9e2ce1d200d031",
+      "bytes": 3229
+    }
+  ],
+  "validation": {
+    "baseline_interior_hash_reconstruction": "passed",
+    "baseline_test_git_blob_reconstruction": "passed",
+    "node_js_mjs_syntax": "passed",
+    "dependency_free_helper_assertions": "passed",
+    "layered_manifest_real_IO": "passed",
+    "relative_imports": "resolved",
+    "css_references": "resolved",
+    "css_braces": "balanced",
+    "npm_install": "not executed",
+    "new_vitest_suite": "not executed",
+    "react_build": "not executed",
+    "browser_interaction": "not executed"
+  }
+}

@@ -38,12 +38,13 @@ describe("interior pages", () => {
     expect(context.service).toBeNull();
     expect(context.industry).toBeNull();
   });
-  it("retains the honest offline quote state", () => {
+  it("retains the honest UI-only quote state", () => {
     const html = renderPage(getPageByPath("/request-a-quote"), "?industry=banking");
     expect(html).toContain("Online submission is not connected yet.");
-    expect(html).toContain("Selected interest:");
-    expect(html).not.toContain("<form");
-    expect(html).not.toContain('type="submit"');
+    expect(html).toContain('data-ui-only="true"');
+    expect(html).toContain("Validate &amp; preview");
+    expect(html).toContain('id="quote-ui-fields" disabled=""');
+    expect(html).not.toMatch(/<form[^>]*action=/);
   });
   it("highlights legacy industry routes under Industries", () => {
     const industries = navigation.find((item) => item.href === "/industries");

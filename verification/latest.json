@@ -1,8 +1,9 @@
 {
-  "startedAt": "2026-10-29T10:32:51.463Z",
+  "startedAt": "2026-10-29T11:11:30.040Z",
   "node": "v24.16.0",
-  "baseline": "81b82ee4dcd23129b66dcc6d85231da0ed55b070",
-  "verifierVersion": "4.1",
+  "baseline": "fe6f3bf70443f775c08302f29724f2a600be2ba9",
+  "verifierVersion": "5.0",
+  "scope": "UI-only quote preview; no delivery integration",
   "checks": [
     {
       "name": "lockfile dependencies declarations",
@@ -15,9 +16,9 @@
       "detail": ""
     },
     {
-      "name": "previous batch file integrity (LF-normalized)",
+      "name": "active delivered-file integrity (newest approved version)",
       "passed": true,
-      "detail": ""
+      "detail": "67 files; "
     },
     {
       "name": "wildcard fallback has no server loader export",
@@ -25,12 +26,12 @@
       "detail": ""
     },
     {
-      "name": "authored app is JavaScript, not TypeScript",
+      "name": "authored app and shared code are JavaScript",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "relative app import targets exist",
+      "name": "relative source import targets exist",
       "passed": true,
       "detail": ""
     },
@@ -40,16 +41,26 @@
       "detail": ""
     },
     {
+      "name": "quote configuration is UI-only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quote form source has no delivery/persistence calls",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "name": "npm run test",
       "passed": true,
       "detail": "exit 0",
-      "outputTail": "\n> easycodechecks@0.1.0 test\n> vitest run\n\n\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.7 \u001b[39m\u001b[90mC:/Users/karth/Desktop/Projects/Agency/Easy Code Checks/easycodechecks\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/motion.test.js \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/npm-command.test.js \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/content.test.js \u001b[2m(\u001b[22m\u001b[2m7 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 9\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/scene-resources.test.js \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 9\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/not-found.test.jsx \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 15\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/interior.test.jsx \u001b[2m(\u001b[22m\u001b[2m19 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 86\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/home.test.jsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 29\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m7 passed\u001b[39m\u001b[22m\u001b[90m (7)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m39 passed\u001b[39m\u001b[22m\u001b[90m (39)\u001b[39m\n\u001b[2m   Start at \u001b[22m 16:02:52\n\u001b[2m   Duration \u001b[22m 1.39s\u001b[2m (transform 642ms, setup 0ms, collect 1.76s, tests 160ms, environment 2ms, prepare 1.52s)\u001b[22m\n\n"
+      "outputTail": "\n> easycodechecks@0.1.0 test\n> vitest run\n\n\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.7 \u001b[39m\u001b[90mC:/Users/karth/Desktop/Projects/Agency/Easy Code Checks/easycodechecks\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/npm-command.test.js \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 6\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/motion.test.js \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/manifest-integrity.test.js \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 22\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/content.test.js \u001b[2m(\u001b[22m\u001b[2m7 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/scene-resources.test.js \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 10\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/not-found.test.jsx \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 21\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/quote-schema.test.js \u001b[2m(\u001b[22m\u001b[2m11 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 12\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/quote-form.test.jsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 23\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/interior.test.jsx \u001b[2m(\u001b[22m\u001b[2m19 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 87\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/home.test.jsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 28\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m10 passed\u001b[39m\u001b[22m\u001b[90m (10)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m55 passed\u001b[39m\u001b[22m\u001b[90m (55)\u001b[39m\n\u001b[2m   Start at \u001b[22m 16:41:31\n\u001b[2m   Duration \u001b[22m 1.50s\u001b[2m (transform 1.01s, setup 0ms, collect 3.50s, tests 221ms, environment 3ms, prepare 2.37s)\u001b[22m\n\n"
     },
     {
       "name": "npm run build",
       "passed": true,
       "detail": "exit 0",
-      "outputTail": "[22m\u001b[36massets/site-BhRg5DvV.js               \u001b[39m\u001b[1m\u001b[2m  0.96 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.49 kB\u001b[22m\n\u001b[2mbuild/client/\u001b[22m\u001b[36massets/index-Bb8JjhAW.js              \u001b[39m\u001b[1m\u001b[2m  3.85 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   1.72 kB\u001b[22m\n\u001b[2mbuild/client/\u001b[22m\u001b[36massets/root-BIiqvjaU.js               \u001b[39m\u001b[1m\u001b[2m  8.40 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.95 kB\u001b[22m\n\u001b[2mbuild/client/\u001b[22m\u001b[36massets/home-DO9EX3C_.js               \u001b[39m\u001b[1m\u001b[2m 21.86 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   7.60 kB\u001b[22m\n\u001b[2mbuild/client/\u001b[22m\u001b[36massets/page-M6WX1ZIU.js               \u001b[39m\u001b[1m\u001b[2m 25.16 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   8.30 kB\u001b[22m\n\u001b[2mbuild/client/\u001b[22m\u001b[36massets/index-C3M5onoF.js              \u001b[39m\u001b[1m\u001b[2m 36.32 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:  13.60 kB\u001b[22m\n\u001b[2mbuild/client/\u001b[22m\u001b[36massets/jsx-runtime-6Ijt1A5w.js        \u001b[39m\u001b[1m\u001b[2m132.95 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:  44.93 kB\u001b[22m\n\u001b[2mbuild/client/\u001b[22m\u001b[36massets/entry.client-H_uQDK0F.js       \u001b[39m\u001b[1m\u001b[2m215.95 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:  67.26 kB\u001b[22m\n\u001b[2mbuild/client/\u001b[22m\u001b[36massets/HeroCanvas.client-DsLZedlq.js  \u001b[39m\u001b[1m\u001b[33m889.54 kB\u001b[39m\u001b[22m\u001b[2m │ gzip: 240.26 kB\u001b[22m\n\u001b[32m✓ built in 3.32s\u001b[39m\n\u001b[33m  ⚠️  Future Flag Warning: Route middleware support is changing in React Router v8.\n     You can use the `future.v8_middleware` flag to opt in early.\n     -> https://reactrouter.com/v7/upgrading/future#futurev8_middleware\u001b[39m\n\u001b[33m  ⚠️  Future Flag Warning: Route module splitting behavior is changing in React Router v8.\n     You can use the `future.v8_splitRouteModules` flag to opt in early.\n     -> https://reactrouter.com/v7/upgrading/future#futurev8_splitroutemodules\u001b[39m\n\u001b[33m  ⚠️  Future Flag Warning: Vite Environment API usage is changing in React Router v8.\n     You can use the `future.v8_viteEnvironmentApi` flag to opt in early.\n     -> https://reactrouter.com/v7/upgrading/future#futurev8_viteenvironmentapi\u001b[39m\n\u001b[33m  ⚠️  Future Flag Warning: Request handling behavior is changing in React Router v8.\n     You can use the `future.v8_passThroughRequests` flag to opt in early.\n     -> https://reactrouter.com/v7/upgrading/future#futurev8_passthroughrequests\u001b[39m\n\u001b[33m  ⚠️  Future Flag Warning: Data request URL formats are changing in React Router v8.\n     You can use the `future.v8_trailingSlashAwareDataRequests` flag to opt in early.\n     -> https://reactrouter.com/v7/upgrading/future#futurev8_trailingslashawaredatarequests\u001b[39m\n\u001b[36mvite v6.4.5 \u001b[32mbuilding SSR bundle for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 47 modules transformed.\nrendering chunks...\n\u001b[2mbuild/server/\u001b[22m\u001b[32m.vite/manifest.json                   \u001b[39m\u001b[1m\u001b[2m  0.50 kB\u001b[22m\u001b[1m\u001b[22m\n\u001b[2mbuild/server/\u001b[22m\u001b[35massets/server-build-6sOVHnaM.css      \u001b[39m\u001b[1m\u001b[2m 39.03 kB\u001b[22m\u001b[1m\u001b[22m\n\u001b[2mbuild/server/\u001b[22m\u001b[36massets/HeroCanvas.client-9CyKfGv2.js  \u001b[39m\u001b[1m\u001b[2m  0.07 kB\u001b[22m\u001b[1m\u001b[22m\n\u001b[2mbuild/server/\u001b[22m\u001b[36mindex.js                              \u001b[39m\u001b[1m\u001b[2m107.09 kB\u001b[22m\u001b[1m\u001b[22m\n\n\u001b[32m✓\u001b[39m 1 asset cleaned from React Router server build.\n\u001b[2mbuild\\server\\assets\\server-build-6sOVHnaM.css\u001b[22m\n\nPrerender (data): / -> \u001b[1mbuild\\client\\_root.data\u001b[22m\nPrerender (html): / -> \u001b[1mbuild\\client\\index.html\u001b[22m\nPrerender (data): /services -> \u001b[1mbuild\\client\\services.data\u001b[22m\nPrerender (html): /services -> \u001b[1mbuild\\client\\services\\index.html\u001b[22m\nPrerender (data): /services/code-checks -> \u001b[1mbuild\\client\\services\\code-checks.data\u001b[22m\nPrerender (html): /services/code-checks -> \u001b[1mbuild\\client\\services\\code-checks\\index.html\u001b[22m\nPrerender (data): /services/sign-permitting -> \u001b[1mbuild\\client\\services\\sign-permitting.data\u001b[22m\nPrerender (html): /services/sign-permitting -> \u001b[1mbuild\\client\\services\\sign-permitting\\index.html\u001b[22m\nPrerender (data): /services/variances-appeals -> \u001b[1mbuild\\client\\services\\variances-appeals.data\u001b[22m\nPrerender (html): /services/variances-appeals -> \u001b[1mbuild\\client\\services\\variances-appeals\\index.html\u001b[22m\nPrerender (data): /industries -> \u001b[1mbuild\\client\\industries.data\u001b[22m\nPrerender (html): /industries -> \u001b[1mbuild\\client\\industries\\index.html\u001b[22m\nPrerender (data): /drive-thru -> \u001b[1mbuild\\client\\drive-thru.data\u001b[22m\nPrerender (html): /drive-thru -> \u001b[1mbuild\\client\\drive-thru\\index.html\u001b[22m\nPrerender (data): /building-signs -> \u001b[1mbuild\\client\\building-signs.data\u001b[22m\nPrerender (html): /building-signs -> \u001b[1mbuild\\client\\building-signs\\index.html\u001b[22m\nPrerender (data): /banking -> \u001b[1mbuild\\client\\banking.data\u001b[22m\nPrerender (html): /banking -> \u001b[1mbuild\\client\\banking\\index.html\u001b[22m\nPrerender (data): /subdivision -> \u001b[1mbuild\\client\\subdivision.data\u001b[22m\nPrerender (html): /subdivision -> \u001b[1mbuild\\client\\subdivision\\index.html\u001b[22m\nPrerender (data): /about -> \u001b[1mbuild\\client\\about.data\u001b[22m\nPrerender (html): /about -> \u001b[1mbuild\\client\\about\\index.html\u001b[22m\nPrerender (data): /blog -> \u001b[1mbuild\\client\\blog.data\u001b[22m\nPrerender (html): /blog -> \u001b[1mbuild\\client\\blog\\index.html\u001b[22m\nPrerender (data): /request-a-quote -> \u001b[1mbuild\\client\\request-a-quote.data\u001b[22m\nPrerender (html): /request-a-quote -> \u001b[1mbuild\\client\\request-a-quote\\index.html\u001b[22m\nPrerender (data): /contact -> \u001b[1mbuild\\client\\contact.data\u001b[22m\nPrerender (html): /contact -> \u001b[1mbuild\\client\\contact\\index.html\u001b[22m\nPrerender (html): SPA Fallback -> \u001b[1mbuild\\client\\__spa-fallback.html\u001b[22m\nRemoving the server build in \u001b[32mC:\\Users\\karth\\Desktop\\Projects\\Agency\\Easy Code Checks\\easycodechecks\\build\\server\u001b[39m due to ssr:false\n\u001b[32m✓ built in 483ms\u001b[39m\nGenerated sitemap for 14 routes and development robots.txt.\nnpm notice run easycodechecks@0.1.0 validate:content\nnpm notice run node scripts/validate-content.mjs\n\u001b[33m\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n"
+      "outputTail": "js       \u001b[39m\u001b[1m\u001b[2m215.95 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:  67.26 kB\u001b[22m\n\u001b[2mbuild/client/\u001b[22m\u001b[36massets/HeroCanvas.client-DUoWv816.js  \u001b[39m\u001b[1m\u001b[33m889.54 kB\u001b[39m\u001b[22m\u001b[2m │ gzip: 240.26 kB\u001b[22m\n\u001b[32m✓ built in 3.85s\u001b[39m\n\u001b[33m  ⚠️  Future Flag Warning: Route middleware support is changing in React Router v8.\n     You can use the `future.v8_middleware` flag to opt in early.\n     -> https://reactrouter.com/v7/upgrading/future#futurev8_middleware\u001b[39m\n\u001b[33m  ⚠️  Future Flag Warning: Route module splitting behavior is changing in React Router v8.\n     You can use the `future.v8_splitRouteModules` flag to opt in early.\n     -> https://reactrouter.com/v7/upgrading/future#futurev8_splitroutemodules\u001b[39m\n\u001b[33m  ⚠️  Future Flag Warning: Vite Environment API usage is changing in React Router v8.\n     You can use the `future.v8_viteEnvironmentApi` flag to opt in early.\n     -> https://reactrouter.com/v7/upgrading/future#futurev8_viteenvironmentapi\u001b[39m\n\u001b[33m  ⚠️  Future Flag Warning: Request handling behavior is changing in React Router v8.\n     You can use the `future.v8_passThroughRequests` flag to opt in early.\n     -> https://reactrouter.com/v7/upgrading/future#futurev8_passthroughrequests\u001b[39m\n\u001b[33m  ⚠️  Future Flag Warning: Data request URL formats are changing in React Router v8.\n     You can use the `future.v8_trailingSlashAwareDataRequests` flag to opt in early.\n     -> https://reactrouter.com/v7/upgrading/future#futurev8_trailingslashawaredatarequests\u001b[39m\n\u001b[36mvite v6.4.5 \u001b[32mbuilding SSR bundle for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 55 modules transformed.\nrendering chunks...\n\u001b[2mbuild/server/\u001b[22m\u001b[32m.vite/manifest.json                   \u001b[39m\u001b[1m\u001b[2m  0.50 kB\u001b[22m\u001b[1m\u001b[22m\n\u001b[2mbuild/server/\u001b[22m\u001b[35massets/server-build-Qu-YylNY.css      \u001b[39m\u001b[1m\u001b[2m 44.48 kB\u001b[22m\u001b[1m\u001b[22m\n\u001b[2mbuild/server/\u001b[22m\u001b[36massets/HeroCanvas.client-9CyKfGv2.js  \u001b[39m\u001b[1m\u001b[2m  0.07 kB\u001b[22m\u001b[1m\u001b[22m\n\u001b[2mbuild/server/\u001b[22m\u001b[36mindex.js                              \u001b[39m\u001b[1m\u001b[2m125.59 kB\u001b[22m\u001b[1m\u001b[22m\n\n\u001b[32m✓\u001b[39m 1 asset cleaned from React Router server build.\n\u001b[2mbuild\\server\\assets\\server-build-Qu-YylNY.css\u001b[22m\n\nPrerender (data): / -> \u001b[1mbuild\\client\\_root.data\u001b[22m\nPrerender (html): / -> \u001b[1mbuild\\client\\index.html\u001b[22m\nPrerender (data): /services -> \u001b[1mbuild\\client\\services.data\u001b[22m\nPrerender (html): /services -> \u001b[1mbuild\\client\\services\\index.html\u001b[22m\nPrerender (data): /services/code-checks -> \u001b[1mbuild\\client\\services\\code-checks.data\u001b[22m\nPrerender (html): /services/code-checks -> \u001b[1mbuild\\client\\services\\code-checks\\index.html\u001b[22m\nPrerender (data): /services/sign-permitting -> \u001b[1mbuild\\client\\services\\sign-permitting.data\u001b[22m\nPrerender (html): /services/sign-permitting -> \u001b[1mbuild\\client\\services\\sign-permitting\\index.html\u001b[22m\nPrerender (data): /services/variances-appeals -> \u001b[1mbuild\\client\\services\\variances-appeals.data\u001b[22m\nPrerender (html): /services/variances-appeals -> \u001b[1mbuild\\client\\services\\variances-appeals\\index.html\u001b[22m\nPrerender (data): /industries -> \u001b[1mbuild\\client\\industries.data\u001b[22m\nPrerender (html): /industries -> \u001b[1mbuild\\client\\industries\\index.html\u001b[22m\nPrerender (data): /drive-thru -> \u001b[1mbuild\\client\\drive-thru.data\u001b[22m\nPrerender (html): /drive-thru -> \u001b[1mbuild\\client\\drive-thru\\index.html\u001b[22m\nPrerender (data): /building-signs -> \u001b[1mbuild\\client\\building-signs.data\u001b[22m\nPrerender (html): /building-signs -> \u001b[1mbuild\\client\\building-signs\\index.html\u001b[22m\nPrerender (data): /banking -> \u001b[1mbuild\\client\\banking.data\u001b[22m\nPrerender (html): /banking -> \u001b[1mbuild\\client\\banking\\index.html\u001b[22m\nPrerender (data): /subdivision -> \u001b[1mbuild\\client\\subdivision.data\u001b[22m\nPrerender (html): /subdivision -> \u001b[1mbuild\\client\\subdivision\\index.html\u001b[22m\nPrerender (data): /about -> \u001b[1mbuild\\client\\about.data\u001b[22m\nPrerender (html): /about -> \u001b[1mbuild\\client\\about\\index.html\u001b[22m\nPrerender (data): /blog -> \u001b[1mbuild\\client\\blog.data\u001b[22m\nPrerender (html): /blog -> \u001b[1mbuild\\client\\blog\\index.html\u001b[22m\nPrerender (data): /request-a-quote -> \u001b[1mbuild\\client\\request-a-quote.data\u001b[22m\nPrerender (html): /request-a-quote -> \u001b[1mbuild\\client\\request-a-quote\\index.html\u001b[22m\nPrerender (data): /contact -> \u001b[1mbuild\\client\\contact.data\u001b[22m\nPrerender (html): /contact -> \u001b[1mbuild\\client\\contact\\index.html\u001b[22m\nPrerender (html): SPA Fallback -> \u001b[1mbuild\\client\\__spa-fallback.html\u001b[22m\nRemoving the server build in \u001b[32mC:\\Users\\karth\\Desktop\\Projects\\Agency\\Easy Code Checks\\easycodechecks\\build\\server\u001b[39m due to ssr:false\n\u001b[32m✓ built in 523ms\u001b[39m\nGenerated sitemap for 14 routes and development robots.txt.\nnpm notice run easycodechecks@0.1.0 validate:content\nnpm notice run node scripts/validate-content.mjs\n\u001b[33mnode_modules/zod/v4/core/util.js (400:0): A comment\n\n\"// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle.\"\n\nin \"node_modules/zod/v4/core/util.js\" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.\u001b[39m\n\u001b[33mnode_modules/zod/v4/core/regexes.js (74:0): A comment\n\n\"/** Anchors a pattern source. The interpolation lives here rather than at the call site because\n * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it\n * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */\"\n\nin \"node_modules/zod/v4/core/regexes.js\" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.\u001b[39m\n\u001b[33m\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n"
     },
     {
       "name": "prerender /",
@@ -187,7 +198,7 @@
       "detail": ""
     },
     {
-      "name": "quote page does not fake online submission",
+      "name": "quote page exposes only a safe local preview",
       "passed": true,
       "detail": ""
     },
@@ -203,9 +214,20 @@
     }
   ],
   "browserVerification": "Not performed by this script; use the manual checklist.",
-  "checkedOutCommit": "81b82ee4dcd23129b66dcc6d85231da0ed55b070",
+  "checkedOutCommit": "fe6f3bf70443f775c08302f29724f2a600be2ba9",
+  "deliveryManifests": [
+    "BATCH-2-MANIFEST.json",
+    "BATCH-3-MANIFEST.json",
+    "BATCH-4-MANIFEST.json",
+    "BUILD-FIX-4.1-MANIFEST.json",
+    "BATCH-5-MANIFEST.json"
+  ],
   "sourceHashes": {
     "app/components/Container.jsx": "850b842af4f6032a8dc28c6f7f5a3e44965c7c495ad3aea725d1e31c98c26f8b",
+    "app/components/forms/FormField.jsx": "cf48b8d93384bab4bd2bef8311f94fb55ec53adc19c3ce23b40cb98f936b6ba4",
+    "app/components/forms/QuoteForm.jsx": "a2b68a3a9842ee660c8f792d3ee520afc729227d50810fbd961a2847f6f9152d",
+    "app/components/forms/QuotePageBody.jsx": "4813fe995673d8f1ddace6ce529f2e8bf5c45360a04778014c406e91877f0f83",
+    "app/components/forms/QuoteReview.jsx": "c62a70391c042b3060aa8446e0123410703a8b714b634cf413f1cf82921c74b2",
     "app/components/home/Arrow.jsx": "9976cb14445554a525815135e0cd6906e3cf6cf212b5f8aac3cb73b972613e39",
     "app/components/home/HeroVisual.jsx": "33a27b5710e2e97b703f7f0bf82f1d07978003500350359b617436c06e7054b5",
     "app/components/home/SectionHeading.jsx": "293e9316bd1e9008227f5cfd387d557a83fd38950538eeca600dd03d0e04d842",
@@ -213,7 +235,7 @@
     "app/components/home/SitePlan.jsx": "1f3b6fa671b3196024d01545e1265d3705ad203b2b1feddb533e7d4bda146f26",
     "app/components/interior/Breadcrumbs.jsx": "2c35c11c6bce590ba06dd770842fdce9390aae5bd17f48e2a36b5f768c3f5e47",
     "app/components/interior/FAQList.jsx": "5a086ca3d71b8e1088cdbad96dbe7df7b36023020c9597b48cc56c2729eb60e9",
-    "app/components/interior/InteriorView.jsx": "52406051382939423c459353d8a598bf8d4150f5e7c45c83e7d4b5fc977fc5d8",
+    "app/components/interior/InteriorView.jsx": "efd6060e157a76b06ccc1b2de3ed574f5b42ea8be34c303f3d4cc6626aa4150e",
     "app/components/interior/PageHero.jsx": "d0e25523581f977774104beece281db463908dcf7294e540962004e5d13b1de0",
     "app/components/interior/RelatedPages.jsx": "61db6a67e7f2616786e84dfaa124a88ac36d5787603fb9747a85af67fedf41d7",
     "app/components/SiteFooter.jsx": "2e83f423209663fc3b8326cdd5e2b1272a7f0498285a66bbdacd8128e49d7a6a",
@@ -221,6 +243,7 @@
     "app/content/home.js": "3284e5689bd719d41d855833f69b861372f066835bd3e263b8b21cdbc8564a03",
     "app/content/interior.js": "974d4092b0ec1ac60685bada4397025b15ea7e6b1c07f904a0e56ace9d1f6e0a",
     "app/content/pages.js": "5d8478017fe88f817aab94b0420e842c0225c19020eeef4c7e8325830a2a4458",
+    "app/content/quote.js": "421134630ae8aa51a94aa014f62582bc3afa57da98478cf8397b05ee3c684023",
     "app/content/site.js": "c56ef30504e956d764678cc51d6801e3e145e3eb91466c6ffe512c7c272e4a59",
     "app/hooks/useHomeMotion.js": "ee10094935f618f2065e22d8252a728ada5e718682a09a644dfb8d3d5b46974b",
     "app/hooks/useInView.js": "d0695c7ea1267480ce68136be5c313cce6738cdc598819b66251797b87f35e20",
@@ -246,14 +269,17 @@
     "app/styles/home.module.css": "c2a6bcda80419a07847224a025012906fb5d9bacce451ebe941698d401d379dc",
     "app/styles/interior.module.css": "bddd3c42d948129103ce0912b30caf3a7fb23ef9662f0b7aff8b736912461b6b",
     "app/styles/navigation.module.css": "add0e5c236493e2d0dcb2bfb457ca257c8780aa9087c7e7490fba42622047e9c",
+    "app/styles/quote.module.css": "8bec8f189c2c92d0be2fae777547500770d3d567371f14b1372e141b8290dd2c",
     "app/styles/scene.module.css": "d6684458770484276a44d809e9673c45305b929b82dacbb8d90006f8fe373e85",
     "app/styles/tokens.css": "c16c1f93ebe10a2b2c5778f73efe7461b805eae1f5b4b9697b8ee3adcd15653c",
     "app/three/HeroCanvas.client.jsx": "ee0c3612a9915034b5644a6d6085510bc735d82b778977cfc8493029aad82f72",
     "app/three/HeroScene.jsx": "4ae60bf3c42214093bdf7515e033249158abd0c9c1181f7b120f4085bd7302b5",
     "app/three/scene-resources.js": "c825944b30938c91713fabcb0d123f26b3bebc8a16bb0e91eb30345c4abe622e",
     "app/three/SceneBoundary.jsx": "7be17072d3dd7bb36906ed967913415a62415946da2c2d926ea65845620f8985",
-    "app/three/SiteModel.jsx": "fd151d332b61f8abdd9c09fe7a67494503e6a5dbf9b92eec608620d1d2dfd017"
+    "app/three/SiteModel.jsx": "fd151d332b61f8abdd9c09fe7a67494503e6a5dbf9b92eec608620d1d2dfd017",
+    "shared/quote-options.js": "d98283b1f6ae5cda4190c829c4016324aa68d45c66fcf8b24262cf37ff53ccc9",
+    "shared/quote-schema.js": "f858d9054c14c2cd93a83f876256934b26de7ec593a5cd361939c3322fe0b465"
   },
-  "finishedAt": "2026-10-29T10:33:00.816Z",
+  "finishedAt": "2026-10-29T11:11:39.966Z",
   "passed": true
 }
