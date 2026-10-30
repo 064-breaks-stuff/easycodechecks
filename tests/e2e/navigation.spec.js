@@ -1,8 +1,14 @@
 import { test, expect } from "./fixtures.js";
 
+function desktopQuote(page) {
+  return page.locator('header a[href="/request-a-quote"]').first();
+}
+
 test("desktop disclosures support keyboard dismissal and navigation", async ({ page }) => {
   test.skip((page.viewportSize()?.width ?? 0) < 981, "Desktop-only navigation");
   await page.goto("/");
+  await expect(desktopQuote(page)).toBeVisible();
+  await expect(page.locator('header button[aria-controls="mobile-navigation"]')).toBeHidden();
   const services = page.locator("header details").nth(0);
   const industries = page.locator("header details").nth(1);
   const summary = services.locator("summary");
@@ -23,6 +29,7 @@ test("desktop disclosures support keyboard dismissal and navigation", async ({ p
 test("mobile dialog closes with Escape and restores focus", async ({ page }) => {
   test.skip((page.viewportSize()?.width ?? 0) >= 981, "Mobile-only navigation");
   await page.goto("/");
+  await expect(desktopQuote(page)).toBeHidden();
   const trigger = page.getByRole("button", { name: /^Menu/ });
   const dialog = page.getByRole("dialog", { name: "Navigation" });
   await trigger.click();
@@ -38,6 +45,7 @@ test("mobile dialog closes with Escape and restores focus", async ({ page }) => 
 test("mobile route navigation focuses main content", async ({ page }) => {
   test.skip((page.viewportSize()?.width ?? 0) >= 981, "Mobile-only navigation");
   await page.goto("/");
+  await expect(desktopQuote(page)).toBeHidden();
   await page.getByRole("button", { name: /^Menu/ }).click();
   const dialog = page.getByRole("dialog", { name: "Navigation" });
   await dialog.getByRole("link", { name: "Banks & Financial Institutions", exact: true }).click();
@@ -50,9 +58,12 @@ test("mobile route navigation focuses main content", async ({ page }) => {
 test("resizing an open mobile menu releases its scroll lock", async ({ page }) => {
   test.skip((page.viewportSize()?.width ?? 0) >= 981, "Starts in mobile layout");
   await page.goto("/");
+  await expect(desktopQuote(page)).toBeHidden();
   await page.getByRole("button", { name: /^Menu/ }).click();
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.setViewportSize({ width: 1280, height: 900 });
   await expect(page.getByRole("dialog")).not.toBeVisible();
+  await expect(desktopQuote(page)).toBeVisible();
+  await expect(page.locator('header button[aria-controls="mobile-navigation"]')).toBeHidden();
   expect(await page.evaluate(() => document.body.style.overflow)).not.toBe("hidden");
 });

@@ -1,0 +1,83 @@
+{
+  "baselineCommit": "2cb6bca37c361489cdd91480d7569c8ba64b3713",
+  "validationScope": "Source/package validation only, not rendered acceptance",
+  "cssModuleExportCoverage": {
+    "home.module.css": {
+      "expectedExportsRetained": 61,
+      "missing": []
+    },
+    "interior.module.css": {
+      "expectedExportsRetained": 34,
+      "missing": []
+    },
+    "navigation.module.css": {
+      "expectedExportsRetained": 19,
+      "missing": []
+    },
+    "quote.module.css": {
+      "expectedExportsRetained": 24,
+      "missing": []
+    },
+    "scene.module.css": {
+      "expectedExportsRetained": 6,
+      "missing": []
+    }
+  },
+  "cssParser": "tinycss2 stylesheet/declaration parse passed",
+  "customPropertyReferences": "resolved across delivered CSS",
+  "captureScriptSyntax": "native Node parse passed",
+  "selectedTextContrastPairs": [
+    {
+      "pair": "body",
+      "foreground": "#142b26",
+      "background": "#ffffff",
+      "ratio": 14.96
+    },
+    {
+      "pair": "muted body",
+      "foreground": "#53645c",
+      "background": "#ffffff",
+      "ratio": 6.28
+    },
+    {
+      "pair": "primary button",
+      "foreground": "#ffffff",
+      "background": "#214e40",
+      "ratio": 9.42
+    },
+    {
+      "pair": "accent button",
+      "foreground": "#142b26",
+      "background": "#d2e4ad",
+      "ratio": 11.0
+    },
+    {
+      "pair": "dark hero body",
+      "foreground": "#c0cdc1",
+      "background": "#142b26",
+      "ratio": 9.08
+    },
+    {
+      "pair": "form notice",
+      "foreground": "#506348",
+      "background": "#f2f6eb",
+      "ratio": 5.95
+    },
+    {
+      "pair": "form errors",
+      "foreground": "#922d23",
+      "background": "#ffffff",
+      "ratio": 8.01
+    },
+    {
+      "pair": "footer links",
+      "foreground": "#c1cec2",
+      "background": "#142b26",
+      "ratio": 9.17
+    }
+  ],
+  "fonts": "No font binaries, @font-face, or external font requests added; installed/system fallbacks used",
+  "browserExecution": "Not executed here",
+  "visualReview": "Not performed: no current screenshots or browser rendering tool available",
+  "existingProjectGate": "Must rerun locally after applying"
+}

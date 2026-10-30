@@ -1,10 +1,10 @@
 {
-  "startedAt": "2026-10-29T19:48:17.195Z",
+  "startedAt": "2026-10-30T07:19:02.771Z",
   "baseline": "f3bcc6f95e680fe4627d80ca8c27e0623de66954",
   "passed": true,
   "stage": "complete",
   "scope": "Local production-preview Chromium QA; not a live deployment or hardware-GPU certification.",
-  "checkedOutCommit": "a8a4f884f12e245dd11b2ced55b7d6050088d5c4",
+  "checkedOutCommit": "2cb6bca37c361489cdd91480d7569c8ba64b3713",
   "sourceHashes": {
     "app/components/Container.jsx": "850b842af4f6032a8dc28c6f7f5a3e44965c7c495ad3aea725d1e31c98c26f8b",
     "app/components/forms/FormField.jsx": "cf48b8d93384bab4bd2bef8311f94fb55ec53adc19c3ce23b40cb98f936b6ba4",
@@ -53,13 +53,13 @@
     "app/sections/home/ResearchOverview.jsx": "a410319fe77e9a00fd6edebbdd7b3425956c49a0b3bb097893b459d3bdd517db",
     "app/sections/home/ResourcesPreview.jsx": "52b375ba13dee3adc2e941ee146d5d3b984e82b62ab60fe1f74fcff51df374f7",
     "app/sections/home/ServicesOverview.jsx": "86d6072fb87ff6b10279aa19bafb281f9363e01c2a4f6e79b1c4cc5cb0ad2cc6",
-    "app/styles/globals.css": "b4cde4c662d4c2b45fda627d9244c506f7faab08e3b8236204c8bc155e127f4a",
-    "app/styles/home.module.css": "c2a6bcda80419a07847224a025012906fb5d9bacce451ebe941698d401d379dc",
-    "app/styles/interior.module.css": "bddd3c42d948129103ce0912b30caf3a7fb23ef9662f0b7aff8b736912461b6b",
-    "app/styles/navigation.module.css": "add0e5c236493e2d0dcb2bfb457ca257c8780aa9087c7e7490fba42622047e9c",
-    "app/styles/quote.module.css": "8bec8f189c2c92d0be2fae777547500770d3d567371f14b1372e141b8290dd2c",
-    "app/styles/scene.module.css": "d6684458770484276a44d809e9673c45305b929b82dacbb8d90006f8fe373e85",
-    "app/styles/tokens.css": "c16c1f93ebe10a2b2c5778f73efe7461b805eae1f5b4b9697b8ee3adcd15653c",
+    "app/styles/globals.css": "209133578a3f7d7c9b9fdb022b0b2de564c3f7d856c8cefc8c5b4d1b4f1d3399",
+    "app/styles/home.module.css": "557f498278a3cfe164d0c19dc0eb3a1dbb372bef97f3f6484b5b3248fc62a3e0",
+    "app/styles/interior.module.css": "fb29eb08ec15d4d182d0a715c24d1040d7634f316205293216fbe37ef239f3ee",
+    "app/styles/navigation.module.css": "74356aca54c46c53af32f51e09b4e6d13e3245100f57194f441c8c14bf513115",
+    "app/styles/quote.module.css": "d171898453795eee4a297f2a610a1c0c95ea9d99261aec7eec40495321844cd4",
+    "app/styles/scene.module.css": "119d2083aee4d8130416e24ec5a6bb9705aa1c40f7af35cf0e07091c554009cf",
+    "app/styles/tokens.css": "d82bfa9097255355e2889b73cf530ba3a5e2d2b4a7dc4639e66ef952f7416020",
     "app/three/HeroCanvas.client.jsx": "ee0c3612a9915034b5644a6d6085510bc735d82b778977cfc8493029aad82f72",
     "app/three/HeroScene.jsx": "4ae60bf3c42214093bdf7515e033249158abd0c9c1181f7b120f4085bd7302b5",
     "app/three/scene-resources.js": "c825944b30938c91713fabcb0d123f26b3bebc8a16bb0e91eb30345c4abe622e",
@@ -82,10 +82,12 @@
     "BATCH-7-MANIFEST.json",
     "BUILD-FIX-7.1-MANIFEST.json",
     "BATCH-8-MANIFEST.json",
-    "BATCH-9-MANIFEST.json"
+    "BATCH-9-MANIFEST.json",
+    "BATCH-10-MANIFEST.json",
+    "BUILD-FIX-10.1-MANIFEST.json"
   ],
   "largeJavaScriptFiles": [
-    "assets/HeroCanvas.client-D4FPEZ1H.js"
+    "assets/HeroCanvas.client-BmrsMBKh.js"
   ],
   "browser": {
     "passed": true,
@@ -100,9 +102,9 @@
       "mobile",
       "reduced-motion"
     ],
-    "durationMs": 28821.057,
+    "durationMs": 50570.471000000005,
     "errors": [],
     "failedTests": []
   },
-  "finishedAt": "2026-10-29T19:48:57.110Z"
+  "finishedAt": "2026-10-30T07:20:04.778Z"
 }

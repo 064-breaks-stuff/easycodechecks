@@ -7,7 +7,4 @@
 .canvasLayer > div { width: 100% !important; height: 100% !important; }
 .canvasLayer canvas { width: 100% !important; height: 100% !important; display: block; }
 .canvasVisible { opacity: 1; }
-@media (max-width: 639px), (prefers-reduced-motion: reduce) {
-  .posterHidden { opacity: 1; }
-  .canvasLayer { display: none; }
-}
+@media (max-width: 639px), (prefers-reduced-motion: reduce) { .posterHidden { opacity: 1; } .canvasLayer { display: none; } }

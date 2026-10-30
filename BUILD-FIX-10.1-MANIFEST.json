@@ -1,0 +1,160 @@
+{
+  "patch": "10.1",
+  "replaces": [
+    "app/styles/navigation.module.css",
+    "tests/e2e/navigation.spec.js"
+  ],
+  "dependency_changes": false,
+  "application_javascript_changes": false,
+  "validation": {
+    "css_parse": "passed",
+    "original_display_conflict": "reproduced in selector/cascade simulation",
+    "responsive_cascade_cases": [
+      {
+        "width": 320,
+        "order": "navigation-before-global",
+        "displays": {
+          "nav": "none",
+          "quote": "none",
+          "menu": "inline-flex"
+        }
+      },
+      {
+        "width": 320,
+        "order": "navigation-after-global",
+        "displays": {
+          "nav": "none",
+          "quote": "none",
+          "menu": "inline-flex"
+        }
+      },
+      {
+        "width": 390,
+        "order": "navigation-before-global",
+        "displays": {
+          "nav": "none",
+          "quote": "none",
+          "menu": "inline-flex"
+        }
+      },
+      {
+        "width": 390,
+        "order": "navigation-after-global",
+        "displays": {
+          "nav": "none",
+          "quote": "none",
+          "menu": "inline-flex"
+        }
+      },
+      {
+        "width": 768,
+        "order": "navigation-before-global",
+        "displays": {
+          "nav": "none",
+          "quote": "none",
+          "menu": "inline-flex"
+        }
+      },
+      {
+        "width": 768,
+        "order": "navigation-after-global",
+        "displays": {
+          "nav": "none",
+          "quote": "none",
+          "menu": "inline-flex"
+        }
+      },
+      {
+        "width": 980,
+        "order": "navigation-before-global",
+        "displays": {
+          "nav": "none",
+          "quote": "none",
+          "menu": "inline-flex"
+        }
+      },
+      {
+        "width": 980,
+        "order": "navigation-after-global",
+        "displays": {
+          "nav": "none",
+          "quote": "none",
+          "menu": "inline-flex"
+        }
+      },
+      {
+        "width": 981,
+        "order": "navigation-before-global",
+        "displays": {
+          "nav": "flex",
+          "quote": "inline-flex",
+          "menu": "none"
+        }
+      },
+      {
+        "width": 981,
+        "order": "navigation-after-global",
+        "displays": {
+          "nav": "flex",
+          "quote": "inline-flex",
+          "menu": "none"
+        }
+      },
+      {
+        "width": 1280,
+        "order": "navigation-before-global",
+        "displays": {
+          "nav": "flex",
+          "quote": "inline-flex",
+          "menu": "none"
+        }
+      },
+      {
+        "width": 1280,
+        "order": "navigation-after-global",
+        "displays": {
+          "nav": "flex",
+          "quote": "inline-flex",
+          "menu": "none"
+        }
+      },
+      {
+        "width": 1440,
+        "order": "navigation-before-global",
+        "displays": {
+          "nav": "flex",
+          "quote": "inline-flex",
+          "menu": "none"
+        }
+      },
+      {
+        "width": 1440,
+        "order": "navigation-after-global",
+        "displays": {
+          "nav": "flex",
+          "quote": "inline-flex",
+          "menu": "none"
+        }
+      }
+    ],
+    "test_js_syntax": "passed",
+    "real_browser": "not executed here; rerun locally"
+  },
+  "files": [
+    {
+      "path": "BUILD-FIX-10.1.md",
+      "sha256": "b9172f09ff4f79689b131bf31aee3712e75395b3165dd18e78ccbc4ba5bacafb",
+      "bytes": 2522
+    },
+    {
+      "path": "app/styles/navigation.module.css",
+      "sha256": "74356aca54c46c53af32f51e09b4e6d13e3245100f57194f441c8c14bf513115",
+      "bytes": 3757
+    },
+    {
+      "path": "tests/e2e/navigation.spec.js",
+      "sha256": "7c830e601ecc73ca0c722d265e1e7bd741d7a50ea0e66ea86d35cc01f150830b",
+      "bytes": 3558
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "batch": 10,
+  "baseline_commit": "2cb6bca37c361489cdd91480d7569c8ba64b3713",
+  "scope": "Whole-site visual styling refinement requested by user; no business/routing/stateful-code changes",
+  "replaces": [
+    "app/styles/tokens.css",
+    "app/styles/globals.css",
+    "app/styles/navigation.module.css",
+    "app/styles/home.module.css",
+    "app/styles/scene.module.css",
+    "app/styles/interior.module.css",
+    "app/styles/quote.module.css"
+  ],
+  "dependency_changes": false,
+  "files": [
+    {
+      "path": "BATCH-10.md",
+      "sha256": "0e48bdc2fb283644d91f510e64788c89d3f0f6248b63d9a067904b219550d547",
+      "bytes": 3850
+    },
+    {
+      "path": "app/styles/globals.css",
+      "sha256": "209133578a3f7d7c9b9fdb022b0b2de564c3f7d856c8cefc8c5b4d1b4f1d3399",
+      "bytes": 7096
+    },
+    {
+      "path": "app/styles/home.module.css",
+      "sha256": "557f498278a3cfe164d0c19dc0eb3a1dbb372bef97f3f6484b5b3248fc62a3e0",
+      "bytes": 15702
+    },
+    {
+      "path": "app/styles/interior.module.css",
+      "sha256": "fb29eb08ec15d4d182d0a715c24d1040d7634f316205293216fbe37ef239f3ee",
+      "bytes": 10260
+    },
+    {
+      "path": "app/styles/navigation.module.css",
+      "sha256": "860d9051b9cb34c85a2ae0cfc4780aee8c341ed68254f4f75b03cd426902107e",
+      "bytes": 3599
+    },
+    {
+      "path": "app/styles/quote.module.css",
+      "sha256": "d171898453795eee4a297f2a610a1c0c95ea9d99261aec7eec40495321844cd4",
+      "bytes": 6201
+    },
+    {
+      "path": "app/styles/scene.module.css",
+      "sha256": "119d2083aee4d8130416e24ec5a6bb9705aa1c40f7af35cf0e07091c554009cf",
+      "bytes": 659
+    },
+    {
+      "path": "app/styles/tokens.css",
+      "sha256": "d82bfa9097255355e2889b73cf530ba3a5e2d2b4a7dc4639e66ef952f7416020",
+      "bytes": 1085
+    },
+    {
+      "path": "docs/premium-design-audit.md",
+      "sha256": "855f70a6b4fa344732dd7f6de7964cf84d82af9ead4ce2edf5eb86efa0529bd0",
+      "bytes": 5389
+    },
+    {
+      "path": "docs/premium-validation.json",
+      "sha256": "262bd0c7f31f3900c49f308eb66d0841c16518eeb18cba02bc326a6346b9a19a",
+      "bytes": 2157
+    },
+    {
+      "path": "scripts/capture-design.mjs",
+      "sha256": "b3800b7f1b875c751a59532c768de11033b72be37f353f08d2d59fa2a0d07a67",
+      "bytes": 5002
+    }
+  ],
+  "validation": {
+    "cssModuleExports": "expected exports retained",
+    "customProperties": "resolved",
+    "cssSyntax": "tinycss2 stylesheet/declaration parse passed",
+    "captureScriptSyntax": "passed",
+    "selectedTextContrast": "all checked pairs >=4.5:1",
+    "react_build_vitest_browser": "not executed here",
+    "renderedVisualReview": "not performed; real local capture utility included"
+  }
+}
