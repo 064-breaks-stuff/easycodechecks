@@ -1,17 +1,17 @@
 {
-  "startedAt": "2026-10-30T07:19:02.771Z",
+  "startedAt": "2026-10-30T15:43:23.812Z",
   "baseline": "f3bcc6f95e680fe4627d80ca8c27e0623de66954",
   "passed": true,
   "stage": "complete",
   "scope": "Local production-preview Chromium QA; not a live deployment or hardware-GPU certification.",
-  "checkedOutCommit": "2cb6bca37c361489cdd91480d7569c8ba64b3713",
+  "checkedOutCommit": "7b8f82befb38a4309b952ad377fcbcdbf6527015",
   "sourceHashes": {
     "app/components/Container.jsx": "850b842af4f6032a8dc28c6f7f5a3e44965c7c495ad3aea725d1e31c98c26f8b",
     "app/components/forms/FormField.jsx": "cf48b8d93384bab4bd2bef8311f94fb55ec53adc19c3ce23b40cb98f936b6ba4",
     "app/components/forms/QuoteFallbackNotice.jsx": "acabd100347206f08fd878f281696c084a44011717b3dd943834f69d9b645fd4",
-    "app/components/forms/QuoteForm.jsx": "5ecfdc88f9f4d6e4fb121be768c6afa1867e84fbdfe505c1a68c5f0d506caf81",
-    "app/components/forms/QuotePageBody.jsx": "4813fe995673d8f1ddace6ce529f2e8bf5c45360a04778014c406e91877f0f83",
-    "app/components/forms/QuotePageView.jsx": "655beaeeb8d83091e07c471ed23060a1f192f64c206595fbf1de410f111dd87f",
+    "app/components/forms/QuoteForm.jsx": "fcfd4002eacaa7ace6dacf0a24310fee334f4f45e775c2207f54e573eb1e2685",
+    "app/components/forms/QuotePageBody.jsx": "23e7fa0aeb3260bcba0550b37df1f70016fbbc03db4c185134aa3601d12e1708",
+    "app/components/forms/QuotePageView.jsx": "88292c519f9563238712060e0f9c4eb0acfed125ad1f00d969e2db07fa455da1",
     "app/components/forms/QuoteReview.jsx": "c62a70391c042b3060aa8446e0123410703a8b714b634cf413f1cf82921c74b2",
     "app/components/home/Arrow.jsx": "9976cb14445554a525815135e0cd6906e3cf6cf212b5f8aac3cb73b972613e39",
     "app/components/home/HeroVisual.jsx": "33a27b5710e2e97b703f7f0bf82f1d07978003500350359b617436c06e7054b5",
@@ -28,7 +28,7 @@
     "app/content/home.js": "3284e5689bd719d41d855833f69b861372f066835bd3e263b8b21cdbc8564a03",
     "app/content/interior.js": "974d4092b0ec1ac60685bada4397025b15ea7e6b1c07f904a0e56ace9d1f6e0a",
     "app/content/pages.js": "5d8478017fe88f817aab94b0420e842c0225c19020eeef4c7e8325830a2a4458",
-    "app/content/quote.js": "421134630ae8aa51a94aa014f62582bc3afa57da98478cf8397b05ee3c684023",
+    "app/content/quote.js": "5dde7392e499f89ed8b448ec7d3c148de3d473e1104b7aa3430f89f1339c0602",
     "app/content/site.js": "c56ef30504e956d764678cc51d6801e3e145e3eb91466c6ffe512c7c272e4a59",
     "app/hooks/useHomeMotion.js": "ee10094935f618f2065e22d8252a728ada5e718682a09a644dfb8d3d5b46974b",
     "app/hooks/useInView.js": "d0695c7ea1267480ce68136be5c313cce6738cdc598819b66251797b87f35e20",
@@ -40,15 +40,16 @@
     "app/lib/page-route.js": "5f34f714e1bce666fb385d5ff28aa060bdc18d1fa9e5a26ac4a10d2ebf9ab020",
     "app/lib/seo.js": "a164edf0976a338e148a02c118420bd8aa7d4e726028ab9dcdff99066876bcbb",
     "app/root.jsx": "ae3020585b84c12af7bb2a3d6b0b778ce26057aaf76d88490e2b1e6686ff88c7",
-    "app/routes/home.jsx": "446d8fe898b6a563a5d09fb15dceb87a1d8a62d8b9ec69fa0e51552b450a8cf7",
+    "app/routes/home.jsx": "bc52418887cb02a04941820a6331b4786d332b938636625a7a85d055d9de2d48",
     "app/routes/not-found.jsx": "fa3f17d24eb78f0e3bd806eb2ca891ccd85265ea397594cf93ee481bdbc9e6b3",
-    "app/routes/page.jsx": "a64352b33b450a09e5c79ad0f09e87d11e44bfb7fad114d3bbb1f021447afdd6",
+    "app/routes/page.jsx": "03845663e596ce28f09d2a53a21133aace5eee07b9d0ff514b9965c19babffcd",
     "app/routes/quote.jsx": "26b0384542a0af120cf19cb71af8f7bfaed1a8f9af118b56fd17275e5175b532",
     "app/routes.js": "dbb7781db2113fa911d85e0ba10eaa8ef52eec5c2fe89b14e125f03588dc26d8",
     "app/sections/home/CompanyOverview.jsx": "7127c74cc20b14b07194cbb4e3e1d705a2a9ff24ef493023d3491b3771861c86",
     "app/sections/home/FinalCTA.jsx": "e154a6ca64217789564b5931d1000378a50f87a955d9fd37c9f620b3f64a8475",
-    "app/sections/home/HomeHero.jsx": "863e2c44858b75095da336a18c2a226bc4a65cdcac19bd84d7d87a4c9e072990",
+    "app/sections/home/HomeHero.jsx": "5aee2f14f935b546c821377eb4a9f80eeba53311bfdfddd56093a825aa25fe32",
     "app/sections/home/IndustriesOverview.jsx": "d23d71fa992e01cc58047a2f8435a314d6adb831696f7a75345cfa0308c5b812",
+    "app/sections/home/PresentationSections.jsx": "9ca72cbe2aa5f5975b4b7082abb7cf92398a23071f3c66375c4d9bdb30da053d",
     "app/sections/home/ProjectPreparation.jsx": "51f266ff85b027b4fc075bd9d83bdc79292af28d1ca95d8c6ab643786fc8f822",
     "app/sections/home/ResearchOverview.jsx": "a410319fe77e9a00fd6edebbdd7b3425956c49a0b3bb097893b459d3bdd517db",
     "app/sections/home/ResourcesPreview.jsx": "52b375ba13dee3adc2e941ee146d5d3b984e82b62ab60fe1f74fcff51df374f7",
@@ -57,6 +58,7 @@
     "app/styles/home.module.css": "557f498278a3cfe164d0c19dc0eb3a1dbb372bef97f3f6484b5b3248fc62a3e0",
     "app/styles/interior.module.css": "fb29eb08ec15d4d182d0a715c24d1040d7634f316205293216fbe37ef239f3ee",
     "app/styles/navigation.module.css": "74356aca54c46c53af32f51e09b4e6d13e3245100f57194f441c8c14bf513115",
+    "app/styles/presentation.module.css": "a03f779f0358021796a220b3d7fe85bf1fc2f22ad0ef507c6245ba5235588840",
     "app/styles/quote.module.css": "d171898453795eee4a297f2a610a1c0c95ea9d99261aec7eec40495321844cd4",
     "app/styles/scene.module.css": "119d2083aee4d8130416e24ec5a6bb9705aa1c40f7af35cf0e07091c554009cf",
     "app/styles/tokens.css": "d82bfa9097255355e2889b73cf530ba3a5e2d2b4a7dc4639e66ef952f7416020",
@@ -84,10 +86,11 @@
     "BATCH-8-MANIFEST.json",
     "BATCH-9-MANIFEST.json",
     "BATCH-10-MANIFEST.json",
-    "BUILD-FIX-10.1-MANIFEST.json"
+    "BUILD-FIX-10.1-MANIFEST.json",
+    "BATCH-11-MANIFEST.json"
   ],
   "largeJavaScriptFiles": [
-    "assets/HeroCanvas.client-BmrsMBKh.js"
+    "assets/HeroCanvas.client-DdAtAxgX.js"
   ],
   "browser": {
     "passed": true,
@@ -102,9 +105,9 @@
       "mobile",
       "reduced-motion"
     ],
-    "durationMs": 50570.471000000005,
+    "durationMs": 48484.741,
     "errors": [],
     "failedTests": []
   },
-  "finishedAt": "2026-10-30T07:20:04.778Z"
+  "finishedAt": "2026-10-30T15:44:23.886Z"
 }

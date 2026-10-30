@@ -1,0 +1,75 @@
+{
+  "batch": 11,
+  "baseline_commit": "7b8f82befb38a4309b952ad377fcbcdbf6527015",
+  "scope": "Presentation hierarchy correction; no backend, navigation-state, dependency or route changes",
+  "replaces": [
+    "app/routes/home.jsx",
+    "app/sections/home/HomeHero.jsx",
+    "app/routes/page.jsx",
+    "app/components/forms/QuotePageView.jsx",
+    "app/components/forms/QuoteForm.jsx",
+    "app/components/forms/QuotePageBody.jsx",
+    "app/content/quote.js"
+  ],
+  "dependency_changes": false,
+  "validation": {
+    "quote_form_baseline_sha256": "matched",
+    "quote_form_hooks_and_handlers": "unchanged",
+    "css_parse": "passed",
+    "relative_imports_and_new_css_exports": "resolved",
+    "node_plain_js_syntax": "passed",
+    "react_jsx_build_vitest_browser": "not executed here; run local gate"
+  },
+  "files": [
+    {
+      "path": "BATCH-11.md",
+      "sha256": "9087bd3cd19679713c7c1ee75e17e78202ff9a98c01d4b102c2d6cc8571c705f",
+      "bytes": 3629
+    },
+    {
+      "path": "app/components/forms/QuoteForm.jsx",
+      "sha256": "fcfd4002eacaa7ace6dacf0a24310fee334f4f45e775c2207f54e573eb1e2685",
+      "bytes": 7789
+    },
+    {
+      "path": "app/components/forms/QuotePageBody.jsx",
+      "sha256": "23e7fa0aeb3260bcba0550b37df1f70016fbbc03db4c185134aa3601d12e1708",
+      "bytes": 762
+    },
+    {
+      "path": "app/components/forms/QuotePageView.jsx",
+      "sha256": "88292c519f9563238712060e0f9c4eb0acfed125ad1f00d969e2db07fa455da1",
+      "bytes": 709
+    },
+    {
+      "path": "app/content/quote.js",
+      "sha256": "5dde7392e499f89ed8b448ec7d3c148de3d473e1104b7aa3430f89f1339c0602",
+      "bytes": 772
+    },
+    {
+      "path": "app/routes/home.jsx",
+      "sha256": "bc52418887cb02a04941820a6331b4786d332b938636625a7a85d055d9de2d48",
+      "bytes": 899
+    },
+    {
+      "path": "app/routes/page.jsx",
+      "sha256": "03845663e596ce28f09d2a53a21133aace5eee07b9d0ff514b9965c19babffcd",
+      "bytes": 455
+    },
+    {
+      "path": "app/sections/home/HomeHero.jsx",
+      "sha256": "5aee2f14f935b546c821377eb4a9f80eeba53311bfdfddd56093a825aa25fe32",
+      "bytes": 1294
+    },
+    {
+      "path": "app/sections/home/PresentationSections.jsx",
+      "sha256": "9ca72cbe2aa5f5975b4b7082abb7cf92398a23071f3c66375c4d9bdb30da053d",
+      "bytes": 3290
+    },
+    {
+      "path": "app/styles/presentation.module.css",
+      "sha256": "a03f779f0358021796a220b3d7fe85bf1fc2f22ad0ef507c6245ba5235588840",
+      "bytes": 7476
+    }
+  ]
+}

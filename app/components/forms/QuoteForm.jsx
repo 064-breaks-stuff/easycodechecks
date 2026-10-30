@@ -65,7 +65,7 @@ export default function QuoteForm() {
   );
 
   return (
-    <div className={styles.quoteRoot}>
+    <div className={styles.quoteRoot} data-quote-panel>
       <div className={styles.notice} id="quote-preview-notice"><p className={styles.localBadge}>PREVIEW ONLY</p><h2>{quoteUi.noticeTitle}</h2><p>{quoteUi.noticeText}</p><p>To contact the team directly, email <a href={`mailto:${quoteUi.notificationRecipient}`}>{quoteUi.notificationRecipient}</a> or call <a href={site.phone.href}>{site.phone.display}</a>.</p></div>
       <QuoteFallbackNotice hydrated={hydrated} />
       <form noValidate data-ui-only="true" aria-label="Project inquiry preview" aria-describedby="quote-preview-notice" onSubmit={(event) => {
@@ -95,7 +95,6 @@ export default function QuoteForm() {
           </div></fieldset>
           <div className={styles.acknowledgment}><label htmlFor="quote-previewAcknowledged"><input id="quote-previewAcknowledged" type="checkbox" {...register("previewAcknowledged")} aria-invalid={Boolean(errors.previewAcknowledged)} aria-describedby={errors.previewAcknowledged ? "quote-previewAcknowledged-error" : undefined} required /><span>{quoteUi.acknowledgment} *</span></label>{errors.previewAcknowledged && <p id="quote-previewAcknowledged-error" className={styles.error}>{errors.previewAcknowledged.message}</p>}</div>
           <div className={styles.actions}><button className="button button--primary" type="submit" disabled={!hydrated || isSubmitting}>{isSubmitting ? "Checking…" : "Validate & preview"}</button><button className="button button--secondary" type="button" onClick={clearForm}>Reset form</button></div>
-          <p className={styles.actionNote}>No inquiry will be sent. No database, email service, or file upload is connected.</p>
         </fieldset>
       </form>
       {preview && <QuoteReview values={preview} headingRef={reviewHeadingRef} />}

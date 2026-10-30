@@ -2,8 +2,8 @@ export const quoteUi = Object.freeze({
   mode: "preview-only",
   notificationRecipient: "support@easycodechecks.com",
   noticeTitle: "Online submission is not connected yet.",
-  noticeText: "This is a UI-only preview. Entries are held in this page's memory while it is open. This website does not send or save them.",
-  acknowledgment: "I understand this is a local preview and does not send an inquiry.",
+  noticeText: "Review your project details locally. This preview does not send or save your entries.",
+  acknowledgment: "I understand this preview does not send an inquiry.",
 });
 
 export const quoteFieldLabels = {

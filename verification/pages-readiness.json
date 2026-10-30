@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T07:19:13.330Z",
+  "generatedAt": "2026-10-30T15:43:34.439Z",
   "purpose": "Cloudflare Pages static preview preparation only",
   "deployed": false,
   "cloudflareRuntimeVerified": false,
@@ -65,7 +65,7 @@
   "fallback": {
     "file": "404.html",
     "source": "__spa-fallback.html",
-    "sha256": "9e98ea1b5dd5b7c3d882c76bdf50e755579c41991612b58ff08ae11573a72d12",
+    "sha256": "924e8e7db4134d5a9e72a12581002f684119cbffb85b4b49b27b69e768d89567",
     "byteIdentical": true
   },
   "crawlDirectives": {
